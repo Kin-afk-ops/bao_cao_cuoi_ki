@@ -1,3 +1,21 @@
-#img1{
-      width: 200px;
+.background {
+      background-image: url("bao_cao_cuoi_ki/image/background.png");
+      background-size: cover; /* hiển thị ảnh nền theo kích thước của phần tử HTML */
+      background-position: center center; /* căn giữa ảnh nền */
+      background-repeat: no-repeat; /* không lặp lại ảnh nền */
+    }
+.img{
+      display: flex;
+      width: 100%;
+      border: 1px solid red; 
+          
+}
+.background{
+      width: 100%;
+      border: 1px solid green; 
+} 
+.logo{
+      height: 100px;
+      width: 100px;
+
 }
