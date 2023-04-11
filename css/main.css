@@ -1,21 +1,24 @@
-.background {
-      background-image: url("bao_cao_cuoi_ki/image/background.png");
-      background-size: cover; /* hiển thị ảnh nền theo kích thước của phần tử HTML */
-      background-position: center center; /* căn giữa ảnh nền */
-      background-repeat: no-repeat; /* không lặp lại ảnh nền */
-    }
-.img{
-      display: flex;
-      width: 100%;
-      border: 1px solid red; 
-          
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Urbanist", sans-serif;
 }
-.background{
-      width: 100%;
-      border: 1px solid green; 
-} 
-.logo{
-      height: 100px;
-      width: 100px;
 
+.background {
+  background-image: url("../image/background.png");
+  background-size: cover; /* hiển thị ảnh nền theo kích thước của phần tử HTML */
+  background-position: center center; /* căn giữa ảnh nền */
+  background-repeat: no-repeat; /* không lặp lại ảnh nền */
+}
+.img {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+.background {
+  width: 100%;
+  border: 1px solid green;
+}
+.logo {
+  height: 100px;
+  width: 100px;
 }
