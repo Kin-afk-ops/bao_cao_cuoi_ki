@@ -135,7 +135,7 @@ body {
 }
 
 .header--right {
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .header--right .header__search {
@@ -155,7 +155,7 @@ body {
     font-size: 16px;
     color: #8f8f8f;
     border: none;
-    width: 20rem;
+    width: 22rem;
     border-radius: 12px;
     padding: 7px 15px 7px 15px;
 }
@@ -261,9 +261,6 @@ body {
     
 }
 
-.history__thumbnail--descrip {
-}
-
 .carousel__history--item p:last-child {
     font-size: 0.75rem;
     color: #8f8f8f;
@@ -286,4 +283,8 @@ body {
 
 .trangchu__course {
     height: 500px;
+}
+
+.owl-carousel {
+    overflow: hidden !important;
 }
