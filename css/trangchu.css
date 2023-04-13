@@ -177,10 +177,79 @@ body {
 }
 
 .trangchu__carousel {
-    height: 500px;
+    display: flex;
+    flex-direction: row;
 }
+
+.carousel__number {
+}
+
+.carousel__number .carousel__number--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel__number .carousel__number--item {
+    background-color: white;
+    width: 120px;
+    height: 160px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.carousel__number .carousel__number--item p {
+    margin: 20px;
+}
+
+.carousel__number--item.chart {
+    width: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel__number--item.chart img {
+    height: 80px;
+    width: 80px;
+}
+
+.carousel__number .carousel__number--item p:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.carousel__number .carousel__number--item p:last-child {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.carousel__title {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+
 
 .trangchu__course {
     height: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
