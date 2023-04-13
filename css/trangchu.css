@@ -110,7 +110,8 @@ body {
 
 .trangchu__content--right {
     margin-left: 18%;
-    padding: 20px 0 20px 20px;
+    padding: 5px 0 20px 20px;
+    max-width: 82%;
 }
 
 .trangchu__header {
@@ -124,7 +125,7 @@ body {
 
 .trangchu__header .header--left p:first-child {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 3px;
 }
 
@@ -223,14 +224,16 @@ body {
 .carousel__title {
     font-weight: bold;
     margin: 20px 0;
+    font-size: 1.2rem;
 }
 
 .carousel__title a {
-    margin-left: 45%;
+    margin-left: 40%;
     color: black;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.875rem;
+    max-width: 50%;
 }
 
 .carousel__title i {
@@ -278,13 +281,40 @@ body {
     margin-top: 5px;
 }
 
-
-
-
 .trangchu__course {
     height: 500px;
 }
 
-.owl-carousel {
-    overflow: hidden !important;
+.trangchu__course .course__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.course__content .course__item {
+    border-radius: 12px;
+    background-color: white;
+    width: 280px;
+    margin-right: 20px;
+}
+
+.course__content .course__item .course__thumbnail {
+    width: 280px;
+    height: 150px;
+    border-radius: 12px 12px 0 0;
+}
+
+.course__thumbnail--descrip {
+    padding: 15px 0 5px 20px;
+}
+
+.course__thumbnail--descrip .course__text {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.course__thumbnail--descrip .course__number {
+    font-size: 0.875rem;
+    color: #8f8f8f;
 }
