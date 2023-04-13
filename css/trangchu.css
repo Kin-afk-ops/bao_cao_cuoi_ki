@@ -68,8 +68,8 @@ body {
     padding: 8px 0;
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 0.875rem;
+    font-weight: 600;
+    font-size: 1rem;
     transition: all .5s;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 .trangchu__header .header--left {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .trangchu__header .header--left p:first-child {
@@ -128,7 +128,7 @@ body {
     margin-bottom: 3px;
 }
 
-.trangchu__header .header--left p:nth-child(2){
+.trangchu__header .header--left p:nth-child(2) {
     font-size: .875rem;
     color: rgb(131, 131, 131);
     font-weight: 400;
@@ -151,7 +151,7 @@ body {
     padding-right: 10px;
 }
 
-.header__search .search__bar input { 
+.header__search .search__bar input {
     font-size: 16px;
     color: #8f8f8f;
     border: none;
@@ -181,13 +181,8 @@ body {
     flex-direction: row;
 }
 
-.carousel__number {
-}
-
 .carousel__number .carousel__number--content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .carousel__number .carousel__number--item {
@@ -223,9 +218,67 @@ body {
     font-weight: 400;
 }
 
+/* ---------------------------------------- */
+
 .carousel__title {
     font-weight: bold;
     margin: 20px 0;
+}
+
+.carousel__title a {
+    margin-left: 45%;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.carousel__title i {
+    font-size: 10px;
+}
+
+.carousel__history {
+    margin-left: 30px;
+}
+
+.carousel__history--content {
+    display: flex;
+}
+
+.carousel__history--item {
+    height: 160px;
+    background-color: #ffffff;
+    margin-right: 20px;
+    border-radius: 12px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.carousel__history--item .history__thumbnail {
+    border-radius: 12px 12px 0 0;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.history__thumbnail--descrip {
+}
+
+.carousel__history--item p:last-child {
+    font-size: 0.75rem;
+    color: #8f8f8f;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.carousel__history--item .history__text { 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.875rem;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
 }
 
 
@@ -234,22 +287,3 @@ body {
 .trangchu__course {
     height: 500px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

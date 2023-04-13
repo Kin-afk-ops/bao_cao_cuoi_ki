@@ -9,8 +9,9 @@
   <link rel="icon" href="../image/background.png">
 
 
-  <!-- Slick Carousel  -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
   <!-- Font awesome CSS -->
   <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css">
@@ -132,17 +133,50 @@
             </div>
 
           </div>
-
         </div>
+
         <div class="carousel__history">
-          
+          <div class="carousel__title">Continue to watch <a href="#">See more <i class="fa fa-angle-double-right"></i></a></div>
+          <div class="carousel__history--content">
+
+            <div class="carousel__history--item">
+              <img src="../image/course.jpg" class="history__thumbnail" alt="">
+              <div class="history__thumbnail--descrip">
+                <p class="history__text">
+                  Responsive Portfolio Website using HTML and CSS
+                  | Responsive website design tutorial
+                </p>
+                <p>
+                  35 min
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel__history--item">
+              <img src="../image/course_1.jpg" class="history__thumbnail" alt="">
+              <div class="history__thumbnail--descrip">
+                <p class="history__text">
+                  How To Make A Complete Website Using HTML And CSS
+                  | Responsive Website Tutorial
+                </p>
+                <p>
+                  35 min
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
         </div>
-
       </div>
+    </div>
 
-      <div class="trangchu__course">
-
-      </div>
+    <div class="trangchu__course">
+    </div>
     </div>
   </section>
 
@@ -152,19 +186,31 @@
 <!-- Thư viện hỗ trợ JQuery 3.6.4-->
 <script src="../js/jquery-3.6.4.min.js"></script>
 
+
 <!-- Bootstrap JS 5.3.0  -->
 <script src="../js/bootstrap.bundle.min.js"></script>
 
-
-<!-- Slick Carousel -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+<!-- OWL Carousel JS -->
+<script src="../js/owl.carousel.min.js"></script>
 <script>
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
   });
 </script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    items: 3,
+    loop: false,
+    center: false,
+    margin: 10,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: 'URLHash'
+  });
+</script>
+
+
+
 
 </html>
