@@ -7,16 +7,21 @@ body,
     box-sizing: border-box;
 }
 
+body {
+    background-color: #e9f1f6;
+}
+
 .trangchu__content {
     display: flex;
     height: 1000px;
+    flex-direction: row;
 }
 
 /* LEFT NAVBAR */
 
 .trangchu__content--left {
-    width: 15%;
-    background-image: linear-gradient(60deg,#6fa5ce,#f67fd6, #50b3cf);
+    width: 18%;
+    background-image: linear-gradient(60deg, #6fa5ce, #f67fd6, #50b3cf);
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -24,6 +29,7 @@ body,
     position: fixed;
     bottom: 0;
     top: 0;
+    border-radius: 0 12px 12px 0;
 }
 
 .trangchu__content--right {
@@ -37,7 +43,6 @@ body,
     margin-top: 20px;
     margin-bottom: 70px;
     justify-content: center;
-
 }
 
 .trangchu__content--left .trangchu__brand .brand__logo {
@@ -48,7 +53,7 @@ body,
 
 .trangchu__content--left .trangchu__brand .brand__name {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .trangchu__navbar .navbar__item {
@@ -64,7 +69,7 @@ body,
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
     transition: all .5s;
 }
 
@@ -101,16 +106,81 @@ body,
 }
 
 
+/* ----------------------- */
 
+.trangchu__content--right {
+    margin-left: 18%;
+    padding: 20px 0 20px 20px;
+}
 
+.trangchu__header {
+    display: flex;
+    justify-content: space-between;
+}
 
+.trangchu__header .header--left {
+    margin-top: 10px;
+}
 
+.trangchu__header .header--left p:first-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+}
 
+.trangchu__header .header--left p:nth-child(2){
+    font-size: .875rem;
+    color: rgb(131, 131, 131);
+    font-weight: 400;
+}
 
+.header--right {
+    margin-right: 40px;
+}
 
+.header--right .header__search {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
 
+.header__search .search__bar {
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    padding-right: 10px;
+}
 
+.header__search .search__bar input { 
+    font-size: 16px;
+    color: #8f8f8f;
+    border: none;
+    width: 20rem;
+    border-radius: 12px;
+    padding: 7px 15px 7px 15px;
+}
 
+.header__search .search__bar input:focus {
+    border: 2px black solid;
+}
 
+.header__search .search__bar a {
+    color: gray;
+    padding: 0 10px;
+}
 
+.header--right .header__search .avt {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin-left: 30px;
+}
+
+.trangchu__carousel {
+    height: 500px;
+}
+
+.trangchu__course {
+    height: 500px;
+}
 
