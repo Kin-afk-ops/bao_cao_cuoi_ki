@@ -180,6 +180,7 @@ body {
 .trangchu__carousel {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .carousel__number .carousel__number--content {
@@ -234,6 +235,8 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     max-width: 50%;
+    flex-wrap: nowrap;
+    line-height: 1.8rem;
 }
 
 .carousel__title i {
@@ -241,7 +244,8 @@ body {
 }
 
 .carousel__history {
-    margin-left: 30px;
+    overflow: hidden;
+    margin-right: 70px;
 }
 
 .carousel__history--content {
@@ -296,6 +300,7 @@ body {
     background-color: white;
     width: 280px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .course__content .course__item .course__thumbnail {

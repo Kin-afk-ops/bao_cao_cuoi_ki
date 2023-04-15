@@ -1,74 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
-    <link rel="icon" href="../image/CODING.png">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+  <link rel="icon" href="../image/background.png">
 
-    <!-- fontawesome css -->
-    <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css"> 
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="../css/main.css">
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
-    <!-- background -->
-    <style>
-        body {
-          background-image: url('../image/background.png');
-        }
-        </style>
+  <!-- Font awesome CSS -->
+  <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <!-- Main CSS  -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- Trang chủ CSS -->
+  <link rel="stylesheet" href="../css/trangchu.css">
 </head>
 
 <body>
-    <!-- thanh điều hướng -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./khoahoc.html">Khoá học</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./dangnhap.html" >Đăng nhập</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./dangky.html">Đăng ký</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./video.html">video</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">about</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-3" type="search" placeholder="Tìm kiếm bài viết" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <section class="trangchu__content">
+    <div class="trangchu__content--left">
+      <div class="trangchu__brand">
+        <a href="#" class="brand__logo">
+          <i class="fab fa-react"></i>
+        </a>
+        <p class="brand__name mb-0">Free Course</p>
+      </div>
+
+      <div class="trangchu__navbar">
+        <ul class="ps-0">
+          <li class="navbar__item active">
+            <a href="./trangchu.html" class="navbar__item--content">
+              <i class="fa fa-home"></i>
+              Trang chủ
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="./khoahoc.html" class="navbar__item--content">
+              <i class="fa fa-book-open"></i>
+              Khóa học
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__item--content">
+              <i class="fab fa-blogger"></i>
+              Blog
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__item--content">
+              <i class="fa fa-comment-alt"></i>
+              FeedBack
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="./about.html" class="navbar__item--content">
+              <i class="fa fa-users"></i>
+              About
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="trangchu__content--right">
+
+      <div class="trangchu__header">
+        <div class="header--left">
+          <p>Welcome Back, Alex!</p>
+          <p>You're doing great this week. Keep it up!</p>
+        </div>
+        <div class="header--right">
+          <div class="header__search">
+            <div class="search__bar">
+              <input type="text" placeholder="What do you want to learn ?">
+              <a href="">
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+            <a href="#" class="header--avt">
+              <img src="../image/avatar-cute-vui-nhon.jpg" class="avt" alt="">
+            </a>
           </div>
         </div>
-      </nav>
+      </div>
 
-    <h2><b>Bài viết nổi bật</b></h2>
-    <h6>Tổng hợp những bài viết về lập trình</h6>
-    <br>
-    <br>
-    <br>
-    
-    
-    <!-- Blog 1 -->
-      <div class="card mb-3" style="max-width: 1500px;">
+      <!-- Blog 1 -->
+      <div class="card mb-3" style="max-width: 500px;">
         <div class="row g-0">
           <div class="col-md-2">
             <img src="../image/blogpicture1.png" class="img-fluid rounded-start" alt="...">
@@ -76,7 +119,9 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title"><b>Xu thế chọn ngành hiện nay</b></h5>
-              <p class="card-text">Nếu bạn đang phân vân trong việc chọn ngành, chuyển ngành thì có thể tham khảo bài viết này để biết ngành gì đang hot hiện nay và top các ngành nghề được dự đoán sẽ trở thành xu thế nhé!...</p>
+              <p class="card-text">Nếu bạn đang phân vân trong việc chọn ngành, chuyển ngành thì có thể tham khảo bài
+                viết này để biết ngành gì đang hot hiện nay và top các ngành nghề được dự đoán sẽ trở thành xu thế
+                nhé!...</p>
               <p class="card-text"><small class="text-body-secondary"></small></p>
               <a href="" class="btn btn-primary">Read more</a>
             </div>
@@ -84,39 +129,70 @@
         </div>
       </div>
 
-     <!-- Blog 2 -->
-      <div class="card mb-3" style="max-width: 1500px;">
-        <div class="row g-0">
-          <div class="col-md-2">
-            <img src="../image/blogpicture2.png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><b>Lương lập trình viên Website cao hay thấp? cơ hội việc làm ra sao?</b></h5>
-              <p class="card-text">Trong những năm gần đây, nghề IT đã trở thành một nghề siêu hot với mức thu nhập được cho là “cực khủng”. Vậy với ngách lập trình website thì sao? Lương lập trình website cao hay thấp?.</p>
-              <p class="card-text"><small class="text-body-secondary"></small></p>
-              <a href="" class="btn btn-primary">Read more</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Blog 2 -->
 
       <!-- Blog 3 -->
-      <div class="card mb-3" style="max-width: 1500px;">
-        <div class="row g-0">
-          <div class="col-md-2">
-            <img src="../image/Blogpicture3.png" class="img-fluid rounded-start" alt="..." style="width: 100%;">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><b>Nữ giới có nên chọn ngành IT hay không?</b></h5>
-              <p class="card-text">Mình đã từng được nghe cô tư vấn nói với một bạn nữ có ý định theo ngành IT rằng “là con gái, đừng nên chọn IT vì sẽ rất vất vả”. Vậy thực tế, nữ giới có nên lựa chọn theo nghề IT không?</p>
-              <p class="card-text"><small class="text-body-secondary"></small></p>
-              <a href="" class="btn btn-primary">Read more</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+    </div>
+  </section>
+
 
 </body>
+
+<!-- Thư viện hỗ trợ JQuery 3.6.4-->
+<script src="../js/jquery-3.6.4.min.js"></script>
+
+
+<!-- Bootstrap JS 5.3.0  -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+<!-- OWL Carousel JS -->
+<script src="../js/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+  });
+</script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    margin: 10,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: 'URLHash',
+
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1.8,
+      },
+      768: {
+        items: 2.5,
+      },
+      992: {
+        items: 3,
+      },
+      1300: {
+        items: 3.5,
+      },
+      1400: {
+        items: 4,
+      },
+      1600: {
+        items: 4.5,
+      },
+      1800: {
+        items: 5,
+      }
+    }
+  });
+</script>
+
+
+
+
 </html>

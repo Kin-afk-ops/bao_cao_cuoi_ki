@@ -33,7 +33,7 @@
         <a href="#" class="brand__logo">
           <i class="fab fa-react"></i>
         </a>
-        <p class="brand__name mb-0">Free Course</p>
+        <p class="brand__name mb-0">Aorus</p>
       </div>
 
       <div class="trangchu__navbar">
@@ -57,7 +57,7 @@
             </div>
           </li>
           <li class="navbar__item">
-            <a href="" class="navbar__item--content">
+            <a href="./blog.html" class="navbar__item--content">
               <i class="fab fa-blogger"></i>
               Blog
             </a>
@@ -89,7 +89,6 @@
     </div>
 
     <div class="trangchu__content--right">
-
       <!-- Header -->
       <div class="trangchu__header">
         <div class="header--left">
@@ -104,8 +103,16 @@
                 <i class="fa fa-search"></i>
               </a>
             </div>
-            <a href="#" class="header--avt">
-              <img src="../image/avatar-cute-vui-nhon.jpg" class="avt" alt="">
+            <a href="#" class="header--avt btn-group">
+              <div type="button" class=" btn-secondary" data-bs-toggle="dropdown" data-bs-display="static"
+                aria-expanded="false">
+                <img src="../image/avatar-cute-vui-nhon.jpg" class="avt" alt="">
+              </div>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              </ul>
             </a>
           </div>
         </div>
@@ -182,9 +189,8 @@
       <!-- Courses -->
       <div class="trangchu__course">
         <div class="course__title" id="Course">
-          Courses
+          Khóa học
         </div>
-
         <div class="course__content owl-carousel">
           <div class="course__item">
             <img src="../image/course.jpg" class="course__thumbnail" alt="">
@@ -202,10 +208,10 @@
             <img src="../image/course.jpg" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
-                Nhập môn IT
+                Lập trình C++ cơ bản
               </p>
               <p class="course__number">
-                28 bài giảng
+                15 bài giảng
               </p>
             </div>
           </div>
@@ -214,10 +220,10 @@
             <img src="../image/course.jpg" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
-                Nhập môn IT
+                HTML CSS từ Zero đến Hero
               </p>
               <p class="course__number">
-                28 bài giảng
+                70 bài giảng
               </p>
             </div>
           </div>
@@ -226,22 +232,22 @@
             <img src="../image/course.jpg" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
-                Nhập môn IT
+                Responsive với grid system
               </p>
               <p class="course__number">
-                28 bài giảng
+                20 bài giảng
               </p>
             </div>
           </div>
 
           <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <img src="../image/" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
-                Nhập môn IT
+                Lập trình JavaScrip cơ bản
               </p>
               <p class="course__number">
-                28 bài giảng
+                45 bài giảng
               </p>
             </div>
           </div>
@@ -252,79 +258,12 @@
 
         </div>
 
-        <div class="course__content owl-carousel">
-
-          <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                Nhập môn IT
-              </p>
-              <p class="course__number">
-                28 bài giảng
-              </p>
-            </div>
-          </div>
-
-          <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                Nhập môn IT
-              </p>
-              <p class="course__number">
-                28 bài giảng
-              </p>
-            </div>
-          </div>
-
-          <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                Nhập môn IT
-              </p>
-              <p class="course__number">
-                28 bài giảng
-              </p>
-            </div>
-          </div>
-
-          <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                Nhập môn IT
-              </p>
-              <p class="course__number">
-                28 bài giảng
-              </p>
-            </div>
-          </div>
-
-          <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                Nhập môn IT
-              </p>
-              <p class="course__number">
-                28 bài giảng
-              </p>
-            </div>
-          </div>
-
-
-
-
-
-        </div>
 
       </div>
+
+
+
     </div>
-
-
-
     </div>
   </section>
 
@@ -352,7 +291,7 @@
     URLhashListener: true,
     autoplayHoverPause: true,
     startPosition: 'URLHash',
-
+    loop : true,
     responsiveClass: true,
     responsive: {
       0: {
@@ -361,16 +300,16 @@
       576: {
         items: 1.8,
       },
-      768: {
+      900: {
         items: 2.5,
       },
-      992: {
+      1200: {
         items: 3,
       },
       1300: {
         items: 3.5,
       },
-      1400: { 
+      1400: {
         items: 4,
       },
       1600: {
