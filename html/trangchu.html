@@ -95,6 +95,7 @@
           <p>Welcome Back, Alex!</p>
           <p>You're doing great this week. Keep it up!</p>
         </div>
+
         <div class="header--right">
           <div class="header__search">
             <div class="search__bar">
@@ -103,17 +104,19 @@
                 <i class="fa fa-search"></i>
               </a>
             </div>
-            <a href="#" class="header--avt btn-group">
-              <div type="button" class=" btn-secondary" data-bs-toggle="dropdown" data-bs-display="static"
-                aria-expanded="false">
-                <img src="../image/avatar-cute-vui-nhon.jpg" class="avt" alt="">
+
+            <div class="dropdown">
+              <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../image/avatar.jpg" class="avt" alt="">
               </div>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./profile.html">Trang cá nhân</a></li>
+                <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
               </ul>
-            </a>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -156,31 +159,31 @@
 
           <div class="carousel__history--content">
 
-            <div class="carousel__history--item">
-              <img src="../image/course.jpg" class="history__thumbnail" alt="">
+            <a class="carousel__history--item"
+              href="https://www.youtube.com/watch?v=WS05AU6YYm4&list=PL33lvabfss1xagFyyQPRcppjFKMQ7lvJM&index=1">
+              <img src="../image/history_img.png" class="history__thumbnail" alt="">
               <div class="history__thumbnail--descrip">
                 <p class="history__text">
-                  Responsive Portfolio Website using HTML and CSS
-                  | Responsive website design tutorial
+                  Tổng quan về khóa học Lập trình C++
                 </p>
                 <p>
-                  35 min
+                  2 min
                 </p>
               </div>
-            </div>
+            </a>
 
-            <div class="carousel__history--item">
-              <img src="../image/course_1.jpg" class="history__thumbnail" alt="">
+            <a class="carousel__history--item"
+              href="https://www.youtube.com/watch?v=LJ0Ok2JUfgs&list=PL33lvabfss1xagFyyQPRcppjFKMQ7lvJM&index=14">
+              <img src="../image/history_img_1.png" class="history__thumbnail" alt="">
               <div class="history__thumbnail--descrip">
                 <p class="history__text">
-                  How To Make A Complete Website Using HTML And CSS
-                  | Responsive Website Tutorial
+                  Cơ bản về chuỗi ký tự trong C++
                 </p>
                 <p>
                   35 min
                 </p>
               </div>
-            </div>
+            </a>
 
           </div>
         </div>
@@ -189,11 +192,11 @@
       <!-- Courses -->
       <div class="trangchu__course">
         <div class="course__title" id="Course">
-          Khóa học
+          Khóa học đang học
         </div>
         <div class="course__content owl-carousel">
           <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <img src="../image/nhap_mon.png" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
                 Nhập môn IT
@@ -205,7 +208,7 @@
           </div>
 
           <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <img src="../image/C++.jpg" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
                 Lập trình C++ cơ bản
@@ -217,31 +220,7 @@
           </div>
 
           <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                HTML CSS từ Zero đến Hero
-              </p>
-              <p class="course__number">
-                70 bài giảng
-              </p>
-            </div>
-          </div>
-
-          <div class="course__item">
-            <img src="../image/course.jpg" class="course__thumbnail" alt="">
-            <div class="course__thumbnail--descrip">
-              <p class="course__text">
-                Responsive với grid system
-              </p>
-              <p class="course__number">
-                20 bài giảng
-              </p>
-            </div>
-          </div>
-
-          <div class="course__item">
-            <img src="../image/" class="course__thumbnail" alt="">
+            <img src="../image/java-scrip.jpg" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
               <p class="course__text">
                 Lập trình JavaScrip cơ bản
@@ -251,19 +230,44 @@
               </p>
             </div>
           </div>
-
-
-
-
-
         </div>
 
 
       </div>
 
+      <div class="trangchu__course">
+        <div class="course__title" id="Course">
+          Khóa học đã hoàn thành
+        </div>
+        <div class="course__content owl-carousel">
+          <div class="course__item">
+            <img src="../image/nhap_mon.png" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                Nhập môn IT
+              </p>
+              <p class="course__number">
+                28 bài giảng
+              </p>
+            </div>
+          </div>
+
+          <div class="course__item">
+            <img src="../image/C++.jpg" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                Lập trình C++ cơ bản
+              </p>
+              <p class="course__number">
+                15 bài giảng
+              </p>
+            </div>
+          </div>
+
+        </div>
 
 
-    </div>
+      </div>
     </div>
   </section>
 
@@ -287,11 +291,8 @@
 
 <script>
   $('.owl-carousel').owlCarousel({
+    loop: false,
     margin: 10,
-    URLhashListener: true,
-    autoplayHoverPause: true,
-    startPosition: 'URLHash',
-    loop : true,
     responsiveClass: true,
     responsive: {
       0: {
