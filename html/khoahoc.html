@@ -5,9 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khóa Học</title>
+  <title>Khóa học</title>
+  <link rel="icon" href="../image/background.png">
 
 
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
   <!-- Font awesome CSS -->
   <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css">
@@ -17,20 +21,242 @@
 
   <!-- Main CSS  -->
   <link rel="stylesheet" href="../css/main.css">
+
+  <!-- Trang chủ CSS -->
+  <link rel="stylesheet" href="../css/trangchu.css">
 </head>
 
 <body>
+  <section class="trangchu__content">
+    <div class="trangchu__content--left">
+      <div class="trangchu__brand">
+        <a href="#" class="brand__logo">
+          <i class="fab fa-react"></i>
+        </a>
+        <p class="brand__name mb-0">Free Course</p>
+      </div>
 
-    
-    
+      <div class="trangchu__navbar">
+        <ul class="ps-0">
+          <li class="navbar__item">
+            <a href="./trangchu.html" class="navbar__item--content">
+              <i class="fa fa-home"></i>
+              Trang chủ
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item active">
+            <a href="#Course" class="navbar__item--content">
+              <i class="fa fa-book-open"></i>
+              Khóa học
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__item--content">
+              <i class="fab fa-blogger"></i>
+              Blog
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__item--content">
+              <i class="fa fa-comment-alt"></i>
+              FeedBack
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="./about.html" class="navbar__item--content">
+              <i class="fa fa-users"></i>
+              About
+            </a>
+            <div class="navbar__item--overflow">
+              .
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="trangchu__content--right">
+
+      <!-- Header -->
+      <div class="trangchu__header">
+        <div class="header--left">
+          <p>Hãy bắt đầu một bài học mới, Alex!</p>
+          <p>Luyện mãi thành tài, miệt mài tất giỏi</p>
+        </div>
+        <div class="header--right">
+          <div class="header__search">
+            <div class="search__bar">
+              <input type="text" placeholder="What do you want to learn ?">
+              <a href="">
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+            <a href="#" class="header--avt">
+              <img src="../image/avatar-cute-vui-nhon.jpg" class="avt" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Courses -->
+      <div class="trangchu__course">
+        <div class="course__title" id="Course">
+          Khóa học
+        </div>
+
+        <div class="course__content owl-carousel nonloop">
+          <div class="course__item">
+            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                Nhập môn IT
+              </p>
+              <p class="course__number">
+                28 bài giảng
+              </p>
+            </div>
+          </div>
+
+          <div class="course__item">
+            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                Lập trình C++ cơ bản
+              </p>
+              <p class="course__number">
+                15 bài giảng
+              </p>
+            </div>
+          </div>
+
+          <div class="course__item">
+            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                HTML CSS từ Zero đến Hero
+              </p>
+              <p class="course__number">
+                70 bài giảng
+              </p>
+            </div>
+          </div>
+
+          <div class="course__item">
+            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                Responsive với grid system
+              </p>
+              <p class="course__number">
+                20 bài giảng
+              </p>
+            </div>
+          </div>
+
+          <div class="course__item">
+            <img src="../image/course.jpg" class="course__thumbnail" alt="">
+            <div class="course__thumbnail--descrip">
+              <p class="course__text">
+                Lập trình JavaScrip cơ bản
+              </p>
+              <p class="course__number">
+                45 bài giảng
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    </div>
+  </section>
+
+
 </body>
-
 
 <!-- Thư viện hỗ trợ JQuery 3.6.4-->
 <script src="../js/jquery-3.6.4.min.js"></script>
 
+
 <!-- Bootstrap JS 5.3.0  -->
 <script src="../js/bootstrap.bundle.min.js"></script>
+
+<!-- OWL Carousel JS -->
+<script src="../js/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+  });
+</script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    margin: 10,
+    // URLhashListener: true,
+    // autoplayHoverPause: true,
+    // startPosition: 'URLHash',
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1.8,
+      },
+      768: {
+        items: 2.5,
+      },
+      992: {
+        items: 3,
+      },
+      1300: {
+        items: 3.5,
+      },
+      1400: {
+        items: 4,
+      },
+      1600: {
+        items: 4.5,
+      },
+      1800: {
+        items: 5,
+      }
+    }
+  });
+</script>
+
+<script>
+  $('.nonloop').owlCarousel({
+    center: true,
+    items: 5,
+    loop: false
+  });
+</script>
+
 
 
 </html>

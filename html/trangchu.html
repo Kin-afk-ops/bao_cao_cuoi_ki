@@ -39,7 +39,7 @@
       <div class="trangchu__navbar">
         <ul class="ps-0">
           <li class="navbar__item active">
-            <a href="" class="navbar__item--content">
+            <a href="#" class="navbar__item--content">
               <i class="fa fa-home"></i>
               Trang chủ
             </a>
@@ -48,7 +48,7 @@
             </div>
           </li>
           <li class="navbar__item">
-            <a href="#Course" class="navbar__item--content">
+            <a href="./khoahoc.html" class="navbar__item--content">
               <i class="fa fa-book-open"></i>
               Khóa học
             </a>
@@ -59,7 +59,7 @@
           <li class="navbar__item">
             <a href="" class="navbar__item--content">
               <i class="fab fa-blogger"></i>
-                Blog
+              Blog
             </a>
             <div class="navbar__item--overflow">
               .
@@ -75,7 +75,7 @@
             </div>
           </li>
           <li class="navbar__item">
-            <a href="" class="navbar__item--content">
+            <a href="./about.html" class="navbar__item--content">
               <i class="fa fa-users"></i>
               About
             </a>
@@ -114,7 +114,7 @@
       <!-- Number -->
       <div class="trangchu__carousel">
         <div class="carousel__number">
-          <div class="carousel__title">Statistics</div>
+          <div class="carousel__title">Thống kê</div>
           <div class="carousel__number--content">
 
             <div class="carousel__number--item">
@@ -140,9 +140,9 @@
 
         <div class="carousel__history">
           <div class="carousel__title">
-            Continue to watch
+            Đã xem gần đây
             <a href="#">
-              See more
+              Xem thêm
               <i class="fa fa-angle-double-right"></i>
             </a>
           </div>
@@ -186,7 +186,6 @@
         </div>
 
         <div class="course__content owl-carousel">
-
           <div class="course__item">
             <img src="../image/course.jpg" class="course__thumbnail" alt="">
             <div class="course__thumbnail--descrip">
@@ -349,13 +348,38 @@
 
 <script>
   $('.owl-carousel').owlCarousel({
-    items: 3.5,
-    loop: false,
-    center: false,
     margin: 10,
     URLhashListener: true,
     autoplayHoverPause: true,
-    startPosition: 'URLHash'
+    startPosition: 'URLHash',
+
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1.8,
+      },
+      768: {
+        items: 2.5,
+      },
+      992: {
+        items: 3,
+      },
+      1300: {
+        items: 3.5,
+      },
+      1400: { 
+        items: 4,
+      },
+      1600: {
+        items: 4.5,
+      },
+      1800: {
+        items: 5,
+      }
+    }
   });
 </script>
 
