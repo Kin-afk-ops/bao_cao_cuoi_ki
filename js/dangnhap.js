@@ -3,6 +3,7 @@ $(document).ready(function () {
   var emailForm = $("#email");
   var passwordForm = $("#password");
   var button = $("button");
+  var modal = $(".modal");
 
   form.on("submit", function (e) {
     e.preventDefault();
@@ -74,14 +75,16 @@ $(document).ready(function () {
         var value = localStorage[key];
         const emailCheck = value.toString().split(", ")[1];
         const passwordCheck = value.toString().split(", ")[2];
+
         if (
           emailForm.val() === emailCheck &&
           passwordForm.val() === passwordCheck
         ) {
+          window.location.href = "trangchu.html";
+        } else {
+          modal.removeClass("d-none");
         }
       }
-
-      window.location.href = "trangchu.html";
     }
   });
 });

@@ -26,6 +26,26 @@
     </head>
 
     <main>
+      <!-- Modal -->
+      <div class="modal modal__background d-none">
+        <div class="modal__item text-center">
+          <i class="fa-regular fa-rectangle-xmark modal__close--icon"></i>
+          <i
+            class="fa-solid fa-face-sad-tear text-danger"
+            style="font-size: 150px"
+          ></i>
+
+          <div class="modal__content">
+            <p class="modal__content--title text-danger">Rất tiếc</p>
+            <p class="fs-4">Tài khoản chưa tồn tại!</p>
+            <a class="btn text-white bg-info fs-4 fw-bold" href="./dangky.html"
+              >Đăng ký ngay!</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------------ -->
       <div
         class="background d-flex flex-column justify-content-center align-items-center"
         style="height: 100vh"
@@ -93,4 +113,7 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
 
   <script src="../js/dangnhap.js"></script>
+
+  <!-- main js -->
+  <script src="../js/main.js"></script>
 </html>
