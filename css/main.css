@@ -14,11 +14,107 @@ html {
   width: 100%;
   border: 1px solid red;
 }
-.background {
+
+/* .background {
   width: 100%;
   border: 1px solid green;
-}
+} */
 .logo {
   height: 100px;
   width: 100px;
+}
+
+.modal__background {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.modal__item {
+  background-color: white;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 2;
+  width: 50%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  animation: topDown 1s ease;
+}
+
+.modal__content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content--title {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: cadetblue;
+  margin-bottom: 0;
+}
+
+.modal__close--icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* CSS duong tron modal */
+
+svg,
+.logo {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  opacity: 0;
+  animation: fadeIn 0.75s linear forwards;
+  animation-delay: 1s;
+}
+
+.circle {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: stroke 2.5s ease-out forwards;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes topDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
 }

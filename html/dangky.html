@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Đăng ký</title>
-    <img src="image/CODING.png" id="img1" alt="" />
+    <!-- <img src="../image/CODING.png" id="img1" alt="" /> -->
 
     <!-- Font awesome CSS -->
     <link
       rel="stylesheet"
-      href="../Font/fontawesome-free-6.4.0-web/css/all.css"/>
+      href="../Font/fontawesome-free-6.4.0-web/css/all.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -25,6 +26,41 @@
     </head>
 
     <main>
+      <!-- Modal -->
+      <div class="modal modal__background d-none">
+        <div class="modal__item text-center">
+          <i class="fa-regular fa-rectangle-xmark modal__close--icon"></i>
+          <svg height="200" width="200">
+            <circle
+              class="circle"
+              cx="100"
+              cy="100"
+              r="95"
+              stroke="rgb(25,135,84)"
+              stroke-width="10"
+              fill-opacity="0"
+            />
+          </svg>
+          <div class="logo"></div>
+          <i
+            class="fa-solid fa-check text-success"
+            style="font-size: 150px"
+          ></i>
+
+          <div class="modal__content">
+            <p class="modal__content--title">Chúc mừng</p>
+            <p class="fs-4">Bạn đã đăng ký tài khoản thành công!</p>
+            <a
+              class="btn text-white bg-info fs-4 fw-bold"
+              href="./dangnhap.html"
+              >Đăng nhập ngay</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------------- -->
+
       <div
         class="background d-flex flex-column justify-content-center align-items-center"
         style="height: 100vh"
@@ -116,6 +152,9 @@
   <!-- Bootstrap JS 5.3.0  -->
   <script src="../js/bootstrap.bundle.min.js"></script>
 
-  <!-- js dang ki -->
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+
+  <!-- dang ki js -->
   <script src="../js/dangky.js"></script>
 </html>

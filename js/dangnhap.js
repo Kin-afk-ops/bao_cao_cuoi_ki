@@ -1,12 +1,8 @@
 $(document).ready(function () {
   var form = $("form");
-
-  var nameForm = $("#name");
   var emailForm = $("#email");
   var passwordForm = $("#password");
-  var passwordAgainForm = $("#password2");
   var button = $("button");
-  var modal = $(".modal");
 
   form.on("submit", function (e) {
     e.preventDefault();
@@ -31,18 +27,8 @@ $(document).ready(function () {
   }
 
   function validateForm() {
-    // Xac thuc ho ten
     var check = true;
-    if (validateElement(nameForm) === false) {
-      $("#message__name").html("Vui lòng nhập họ tên!").css({
-        color: "#FF6666",
-        "font-size": "16px",
-        margin: "0",
-        "font-weight": "400",
-      });
-      nameForm.css({ border: "1px solid red" });
-      check = false;
-    }
+
     // Xac thuc email
 
     if (validateElement(emailForm) === false) {
@@ -79,39 +65,23 @@ $(document).ready(function () {
       check = false;
     }
 
-    // Nhap lai mat khau
-
-    if (validateElement(passwordAgainForm) === false) {
-      $("#message__password2").html("Vui lòng nhập mật khẩu!").css({
-        color: "#FF6666",
-        "font-size": "16px",
-        margin: "0",
-        "font-weight": "400",
-      });
-      passwordAgainForm.css({ border: "1px solid red" });
-      check = false;
-    }
-
-    if (validatePassword(passwordForm, passwordAgainForm) === false) {
-      $("#message__password2").html("Mật khẩu không trùng khớp").css({
-        color: "#FF6666",
-        "font-size": "16px",
-        margin: "0",
-        "font-weight": "400",
-      });
-      passwordAgainForm.css({ border: "1px solid red" });
-      check = false;
-    }
     return check;
   }
 
   button.click(function () {
     if (validateForm() === true) {
-      var id = localStorage.length;
-      var text =
-        nameForm.val() + ", " + emailForm.val() + ", " + passwordForm.val();
-      window.localStorage.setItem(id, text);
-      modal.removeClass("d-none");
+      for (var key in localStorage) {
+        var value = localStorage[key];
+        const emailCheck = value.toString().split(", ")[1];
+        const passwordCheck = value.toString().split(", ")[2];
+        if (
+          emailForm.val() === emailCheck &&
+          passwordForm.val() === passwordCheck
+        ) {
+        }
+      }
+
+      window.location.href = "trangchu.html";
     }
   });
 });
