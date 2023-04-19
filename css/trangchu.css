@@ -7,13 +7,9 @@ body,
     box-sizing: border-box;
 }
 
-body {
-    background-color: #e9f1f6;
-}
 
 .trangchu__content {
     display: flex;
-    height: 1000px;
     flex-direction: row;
 }
 
@@ -30,11 +26,6 @@ body {
     bottom: 0;
     top: 0;
     border-radius: 0 12px 12px 0;
-}
-
-.trangchu__content--right {
-    background-color: #e9f1f6;
-    width: 100%;
 }
 
 .trangchu__content--left .trangchu__brand {
@@ -109,9 +100,14 @@ body {
 /* ----------------------- */
 
 .trangchu__content--right {
+    /* background-color: #e9f1f6; */
+    background-color: #d9e9f3;
+
     margin-left: 18%;
     padding: 5px 0 20px 20px;
+    width: 100%;
     max-width: 82%;
+    /* height: 100%; */
 }
 
 .trangchu__header {
@@ -267,7 +263,7 @@ body {
     border-radius: 12px 12px 0 0;
     width: 200px;
     height: 100px;
-    
+
 }
 
 .carousel__history--item p:last-child {
@@ -277,7 +273,7 @@ body {
 
 }
 
-.carousel__history--item .history__text { 
+.carousel__history--item .history__text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -320,4 +316,38 @@ body {
 .course__thumbnail--descrip .course__number {
     font-size: 0.875rem;
     color: #8f8f8f;
+}
+
+
+/* FOOTER */
+.trangchu__footer {
+    background-color: rgb(255, 255, 255);
+    margin-left: 18%;
+    margin-top: 20px;
+    border-radius: 12px 12px 0 0;
+    height: 12rem;
+}
+
+.footer__background {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer__left--icon
+
+.footer__icon {
+    display: flex;
+}
+
+.footer__icon i {
+    font-size: 1rem;
+    border: 1px solid black;
+    margin-right: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
 }
