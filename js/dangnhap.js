@@ -4,6 +4,7 @@ $(document).ready(function () {
   var passwordForm = $("#password");
   var button = $("button");
   var modal = $(".modal");
+  var date = new Date();
 
   form.on("submit", function (e) {
     e.preventDefault();
@@ -75,6 +76,10 @@ $(document).ready(function () {
     passwordForm.css("border", "none");
   });
 
+  var day = date.getDate().toString();
+  var month = date.getMonth().toString();
+  var year = date.getFullYear().toString();
+  var time = day + "_" + month + "_" + year;
   button.click(function () {
     if (validateForm() === true) {
       for (var key in localStorage) {
@@ -89,7 +94,15 @@ $(document).ready(function () {
         ) {
           localStorage.setItem(
             key,
-            name + ", " + emailCheck + ", " + passwordCheck + ", " + 1
+            name +
+              ", " +
+              emailCheck +
+              ", " +
+              passwordCheck +
+              ", " +
+              1 +
+              ", " +
+              time
           );
           window.location.href = "trangchu.html";
         } else {
@@ -98,9 +111,4 @@ $(document).ready(function () {
       }
     }
   });
-
-  for (var key in localStorage) {
-    var value = localStorage[key];
-    console.log(value);
-  }
 });

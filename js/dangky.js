@@ -9,6 +9,8 @@ $(document).ready(function () {
   var button = $("button");
   var modal = $(".modal");
 
+  var date = new Date();
+
   form.on("submit", function (e) {
     e.preventDefault();
   });
@@ -147,9 +149,14 @@ $(document).ready(function () {
     passwordAgainForm.css("border", "none");
   });
 
+  var day = date.getDate().toString();
+  var month = date.getMonth().toString();
+  var year = date.getFullYear().toString();
+  var time = day + "_" + month + "_" + year;
   button.click(function () {
     if (validateForm() === true) {
       var id = localStorage.length;
+
       var text =
         nameForm.val() +
         ", " +
@@ -157,7 +164,9 @@ $(document).ready(function () {
         ", " +
         passwordForm.val() +
         ", " +
-        -1;
+        -1 +
+        ", " +
+        time;
       window.localStorage.setItem(id, text);
       modal.removeClass("d-none");
     }
