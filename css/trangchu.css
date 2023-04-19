@@ -323,31 +323,90 @@ body,
 .trangchu__footer {
     background-color: rgb(255, 255, 255);
     margin-left: 18%;
-    margin-top: 20px;
     border-radius: 12px 12px 0 0;
-    height: 12rem;
+    height: 15rem;
+    padding: 30px 0;
+
 }
 
 .footer__background {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
-.footer__left--icon
-
-.footer__icon {
+.footer__left--icon .footer__icon {
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .footer__icon i {
     font-size: 1rem;
     border: 1px solid black;
     margin-right: 10px;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+    transition: all 0.3s;
+}
+
+.footer__icon i:hover {
+    color: #f67fd6;
+    border: 1px solid #f67fd6;
+}
+
+.footer__title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8f8f8f;
+    margin-bottom: 20px !important;
+}
+
+.footer__title .collapse .card--bs-card-border-width {
+    border: none !important;
+    color: white;
+}
+
+.footer__right--email .footer__email {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.footer__right--email .footer__email:hover {
+    color: #f67fd6;
+}
+
+.footer__about--content {
+    display: flex;
+}
+
+.footer__about--item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.footer__about--content .footer__about--item {
+    margin-right: 7rem;
+}
+
+.footer__right--detail .footer__input {
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 2px 10px;
+    border: 1px solid #8f8f8f;
+}
+
+.footer__right--detail button {
+    padding: 2px 10px;
+    border-radius: 12px;
+    border: 1px solid #8f8f8f;
+    background-color: #f67fd6;
 }
