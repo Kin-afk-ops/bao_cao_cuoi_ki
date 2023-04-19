@@ -151,7 +151,13 @@ $(document).ready(function () {
     if (validateForm() === true) {
       var id = localStorage.length;
       var text =
-        nameForm.val() + ", " + emailForm.val() + ", " + passwordForm.val();
+        nameForm.val() +
+        ", " +
+        emailForm.val() +
+        ", " +
+        passwordForm.val() +
+        ", " +
+        -1;
       window.localStorage.setItem(id, text);
       modal.removeClass("d-none");
     }

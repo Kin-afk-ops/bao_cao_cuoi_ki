@@ -21,12 +21,6 @@ $(document).ready(function () {
     return regex.test(value) ? true : false;
   }
 
-  function validatePassword(password, password2) {
-    const value1 = password.val();
-    const value2 = password2.val();
-    return value1 === value2 ? true : false;
-  }
-
   function validateForm() {
     var check = true;
 
@@ -69,10 +63,23 @@ $(document).ready(function () {
     return check;
   }
 
+  //check
+
+  emailForm.focus(function () {
+    $("#message__email").text("");
+    emailForm.css("border", "none");
+  });
+
+  passwordForm.focus(function () {
+    $("#message__password").text("");
+    passwordForm.css("border", "none");
+  });
+
   button.click(function () {
     if (validateForm() === true) {
       for (var key in localStorage) {
         var value = localStorage[key];
+        const name = value.toString().split(", ")[0];
         const emailCheck = value.toString().split(", ")[1];
         const passwordCheck = value.toString().split(", ")[2];
 
@@ -80,6 +87,10 @@ $(document).ready(function () {
           emailForm.val() === emailCheck &&
           passwordForm.val() === passwordCheck
         ) {
+          localStorage.setItem(
+            key,
+            name + ", " + emailCheck + ", " + passwordCheck + ", " + 1
+          );
           window.location.href = "trangchu.html";
         } else {
           modal.removeClass("d-none");
@@ -87,4 +98,9 @@ $(document).ready(function () {
       }
     }
   });
+
+  for (var key in localStorage) {
+    var value = localStorage[key];
+    console.log(value);
+  }
 });
