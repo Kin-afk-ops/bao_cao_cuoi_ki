@@ -1,0 +1,16 @@
+.profile__avatar {
+  position: absolute;
+  top: 60%;
+  left: 170px;
+  width: 500px;
+}
+
+.profile__avatar img {
+  height: 100%;
+}
+
+#profile__name {
+  left: 170px;
+  bottom: -10px;
+  font-size: 35px;
+}

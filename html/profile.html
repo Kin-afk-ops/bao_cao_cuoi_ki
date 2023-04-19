@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang cá nhân</title>
+    <link rel="icon" href="../image/background.png" />
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+
+
+
+    <!-- Font awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="../Font/fontawesome-free-6.4.0-web/css/all.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="../css/trangchu.css" />
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet" href="../css/profile.css">
+  </head>
+
+  <body>
+    <section class="trangchu__content">
+      <div class="trangchu__content--left">
+        <div class="trangchu__brand">
+          <a href="#" class="brand__logo">
+            <i class="fab fa-react"></i>
+          </a>
+          <p class="brand__name mb-0">Aorus</p>
+        </div>
+
+        <div class="trangchu__navbar">
+          <ul class="ps-0">
+            <li class="navbar__item active">
+              <a href="#" class="navbar__item--content">
+                <i class="fa fa-home"></i>
+                Trang chủ
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="./khoahoc.html" class="navbar__item--content">
+                <i class="fa fa-book-open"></i>
+                Khóa học
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="./blog.html" class="navbar__item--content">
+                <i class="fab fa-blogger"></i>
+                Blog
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="" class="navbar__item--content">
+                <i class="fa fa-comment-alt"></i>
+                FeedBack
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="./about.html" class="navbar__item--content">
+                <i class="fa fa-users"></i>
+                About
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trangchu__content--right">
+        <!-- Header -->
+        <div class="trangchu__header">
+          <div class="header--left">
+            <p id="header__hello"></p>
+            <p>You're doing great this week. Keep it up!</p>
+          </div>
+
+          <div class="header--right">
+            <div class="header__search">
+              <div class="search__bar">
+                <input type="text" placeholder="What do you want to learn ?" />
+                <a href="">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+
+              <div class="dropdown">
+                <div
+                  class="btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../image/avatar.jpg" class="avt" alt="" />
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./profile.html"
+                      >Trang cá nhân</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                  <li>
+                    <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="dangnhap.html"
+                class="header__login--buton btn btn-primary mx-2"
+              >
+                Đăng nhập
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 h-75">
+            <!-- Background -->
+            <div class="w-100 h-75 d-flex flex-column align-items-center position-relative">
+                <img class="w-75 h-75 rounded-5" src="../image/profile-background.jpg" alt="">
+                <div class="h-25 profile__avatar d-flex">
+                    <img class=" rounded-5 border border-info" src="../image/avatar.jpg" alt="">
+                    <h2 class="fw-bold position-absolute" id="profile__name"></h2>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="w-75 d-flex flex-column align-items-center">
+                <div class="border border-info w-75 rounded-4">
+                    <h3 class="mx-3">Giới thiệu</h3>
+                    <p class="mx-5">
+                        <i class="fa-solid fa-user"></i>
+                        Thành viên của <b>Aorus</b> từ <span id="profile__day"></span>.
+                    </p>
+                </div>
+
+              
+
+                <div class="border border-info w-75 rounded-4 mt-5">
+                    <h3 class="mx-3">Các khoá học đã tham gia</h3>
+                    <p class="mx-5">
+                        Chưa có khoá học nào được đăng ký.
+                    </p>
+                </div>
+
+                <div class="border border-info w-75 rounded-4 mt-5">
+                    <h3 class="mx-3">Hoạt động gần đây</h3>
+                    <p class="mx-5">
+                        Chưa có hoạt động gần đây.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </section>
+  </body>
+
+  <!-- Thư viện hỗ trợ JQuery 3.6.4-->
+  <script src="../js/jquery-3.6.4.min.js"></script>
+
+  <!-- Bootstrap JS 5.3.0  -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <!-- OWL Carousel JS -->
+  <script src="../js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
+
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: false,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        576: {
+          items: 1.8,
+        },
+        900: {
+          items: 2.5,
+        },
+        1200: {
+          items: 3,
+        },
+        1300: {
+          items: 3.5,
+        },
+        1400: {
+          items: 4,
+        },
+        1600: {
+          items: 4.5,
+        },
+        1800: {
+          items: 5,
+        },
+      },
+    });
+  </script>
+  <script src="../js/main.js"></script>
+
+  <!-- Profile js -->
+  <script src="../js/profile.js"></script>
+</html>
