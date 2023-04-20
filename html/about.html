@@ -135,9 +135,9 @@
           <div class="footer__left--icon">
             <p class="footer__title">Follow us</p>
             <div class="footer__icon">
-              <i class="fab fa-facebook-f"></i>
+               <a href="https://www.facebook.com/home.php"> <i class="fab fa-facebook-f"></i></a>
               <a href="https://github.com/Kin-afk-ops/bao_cao_cuoi_ki"><i class="fab fa-github"></i></a>
-              <i class="fab fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <i class="fab fa-linkedin-in"></i></a>           
             </div>
           </div>
 
@@ -175,13 +175,23 @@
                 }, 500);
               }
             </script>
-          </div>
-          <div class="footer__right--detail">
-            <p class="footer__title">Đăng ký</p>
-            <p>Để lại email của bạn để nhận được <br> thông báo sớm nhất về khóa học</p>
-            <input type="text" class="footer__input">
-          </div>
-        </div>
+            <div class="footer__right--detail">
+              <p class="footer__title">Đăng ký</p>
+              <p>Để lại email của bạn để nhận được <br> thông báo sớm nhất về khóa học</p>
+              <input type="text" class="footer__input">
+              <button class="footer__button">Đăng ký</button>
+            </div>
+            
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              $(document).ready(function() { <!--là hàm khởi tạo sự kiện khi trang web đã sẵn sàng.-->
+                $('.footer__button').click(function() { <!--là phần tử button bên trong div có class là footer__right--detail.-->
+                  var email = $('.footer__input').val(); <!--là hàm sự kiện khi người dùng click vào button.-->
+                  console.log("Email đăng ký: " + email); <!-- sẽ in giá trị email được lấy từ input vào console.-->
+                });
+              });
+            </script>
+            
       </section>
     </footer>
 
