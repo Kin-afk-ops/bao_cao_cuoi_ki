@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ</title>
+    <title>About</title>
     <link rel="icon" href="../image/background.png" />
 
     <!-- Owl Carousel  -->
@@ -38,7 +38,7 @@
 
         <div class="trangchu__navbar">
           <ul class="ps-0">
-            <li class="navbar__item active">
+            <li class="navbar__item">
               <a href="trangchu.html" class="navbar__item--content"> <!--Liên kết trang chủ-->
                 <i class="fa fa-home"></i>
                 Trang chủ
@@ -66,7 +66,7 @@
               </a>
               <div class="navbar__item--overflow">.</div>
             </li>
-            <li class="navbar__item">
+            <li class="navbar__item active">
               <a href="about.html" class="navbar__item--content"> <!--Liên kết about-->
                 <i class="fa fa-users"></i>
                 About
@@ -120,7 +120,14 @@
         </div>
            
       </section>
-     <!-- Footer -->
+    
+    
+    
+    
+    
+    
+    
+      <!-- Footer -->
      <footer class="trangchu__footer">
       <section class="footer__background">
         <div class="footer__left">
@@ -129,7 +136,7 @@
             <p class="footer__title">Follow us</p>
             <div class="footer__icon">
               <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-github"></i>
+              <a href="https://github.com/Kin-afk-ops/bao_cao_cuoi_ki"><i class="fab fa-github"></i></a>
               <i class="fab fa-linkedin-in"></i>
             </div>
           </div>
@@ -153,7 +160,21 @@
         <div class="footer__right">
           <div class="footer__right--email">
             <p class="footer__title">Follow us</p>
-            <p class="footer__email">aorus@gmail.com</p>
+            <!--Bấm vào Email thì mở ra ứng dụng Email -->
+            <p class="footer__email"><a href="#" onclick="openGmailCompose()" >Aorus@gmail.com</a></p>
+            <script>
+              function openGmailCompose() {
+                var to = 'Aorus@gmail.com';
+                var subject = 'Chủ đề email';
+                var body = 'Nội dung email';
+                var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                window.location.href = mailtoLink;
+                setTimeout(function() {
+                  var gmailComposeLink = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=' + to;
+                  window.open(gmailComposeLink);
+                }, 500);
+              }
+            </script>
           </div>
           <div class="footer__right--detail">
             <p class="footer__title">Đăng ký</p>
