@@ -1,0 +1,44 @@
+.container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas: 
+        "carousel"
+        "button";
+      align-items: center;
+      justify-items: center;
+      height: 100vh;
+    }
+    
+    .carousel {
+      grid-area: carousel;
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .carousel img {
+      display: block;
+      width: 25%;
+      height: auto;
+      
+    }
+    
+    .button {
+      grid-area: button;
+      margin-bottom: 20px;
+    }
+    
+    .button button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .button button:hover {
+      background-color: #0062cc;
+    }
+    
