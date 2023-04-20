@@ -226,30 +226,20 @@
             <p class="footer__title">Follow us</p>
             <!--Bấm vào Email thì mở ra ứng dụng Email -->
             <p class="footer__email"><a href="#" onclick="openGmailCompose()">Aorus@gmail.com</a></p>
-            <script>
+            <script> 
               function openGmailCompose() {
                 var to = 'example@gmail.com'; // Thay đổi email người nhận tại đây
                 var subject = 'Chủ đề email'; // Thay đổi chủ đề email tại đây
                 var body = 'Nội dung email'; // Thay đổi nội dung email tại đây
                 var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
                 window.location.href = mailtoLink;
-                setTimeout(function () {
+                setTimeout(function() {
                   var gmailComposeLink = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=' + to;
                   window.open(gmailComposeLink);
                 }, 500);
-              };
-              <!--
-               - Hàm openGmailCompose sẽ được gọi khi người dùng nhấp vào một phần tử trên trang web.
-               - Biến to chứa địa chỉ email người nhận. Bạn có thể thay đổi giá trị của biến này để thay đổi email người nhận.
-               - Biến subject chứa chủ đề của email. Bạn có thể thay đổi giá trị của biến này để thay đổi chủ đề của email.
-               - Biến body chứa nội dung của email. Bạn có thể thay đổi giá trị của biến này để thay đổi nội dung của email.
-               - mailtoLink là một đường dẫn mailto: để mở trình soạn email mặc định trên trình duyệt và điền sẵn địa chỉ email, chủ đề và nội dung email.
-               - window.location.href = mailtoLink mở trình soạn email mặc định trên trình duyệt.
-               - setTimeout sử dụng để chờ cho cửa sổ soạn email mặc định được mở hoàn toàn trước khi mở cửa sổ soạn email trong Gmail.
-               - Biến gmailComposeLink là một đường dẫn để mở cửa sổ soạn email trong Gmail và điền sẵn địa chỉ email người nhận.
-               - window.open(gmailComposeLink) mở cửa sổ soạn email trong Gmail.   
-              --> 
+              }
             </script>
+            
 
             <div class="footer__right--detail">
               <p class="footer__title">Đăng ký</p>
@@ -260,12 +250,16 @@
 
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
-              $(document).ready(function () { <!--là hàm khởi tạo sự kiện khi trang web đã sẵn sàng.-->
-                $('.footer__button').click(function () { < !--là phần tử button bên trong div có class là footer__right--detail.-- >
-                  var email = $('.footer__input').val(); < !--là hàm sự kiện khi người dùng click vào button.-- >
-                    console.log("Email đăng ký: " + email); < !--sẽ in giá trị email được lấy từ input vào console.-- >
+              $(document).ready(function() {
+                // Khởi tạo sự kiện khi trang web đã sẵn sàng
+                $('.footer__button').click(function() {
+                  // Lấy giá trị email từ input khi người dùng click vào button
+                  var email = $('.footer__input').val();
+                  // In giá trị email vào console
+                  console.log("Email đăng ký: " + email);
                 });
               });
+              
             </script>
 
       </section>
