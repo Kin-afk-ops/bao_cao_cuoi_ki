@@ -1,0 +1,49 @@
+.container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas: 
+        "carousel"
+        "button";
+      align-items: center;
+      justify-items: center;
+      height: 100vh;
+    }
+    
+    .carousel {
+      grid-area: carousel;
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .carousel-item active img {
+      display: block;
+      height: 200px;
+      margin: auto;
+
+    }
+    .d-block w-100 .about__image{
+      align-items: center;    
+      justify-content: center;
+    }
+    .button {
+      grid-area: button;
+      margin-bottom: 20px;
+    }
+    #avatar{
+      width: 320px;
+      height: 480px;
+    }
+    .button button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .button button:hover {
+      background-color: #0062cc;
+    }

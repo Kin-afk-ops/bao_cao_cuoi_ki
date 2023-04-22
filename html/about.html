@@ -11,7 +11,7 @@
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="../css/owl.carousel.min.css" />
     <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
-
+    <link rel="stylesheet" href="/css/about.css">
     <!-- Font awesome CSS -->
     <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css" />
 
@@ -26,7 +26,7 @@
   </head>
 
   <body>
-   <!--Phần Nav -->
+    <!--Phần Nav -->
     <section class="trangchu__content">
       <div class="trangchu__content--left">
         <div class="trangchu__brand">
@@ -118,26 +118,70 @@
             </div>
           </div>
         </div>
-           
-      </section>
-    
-    
-    
-    
-    
-    
-    
-      <!-- Footer -->
-     <footer class="trangchu__footer">
+       
+       
+        <!--Nội dung chính-->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>Who are we?</h1>
+            </div>
+          </div>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../image/Khang.jpg" class="d-block w-100" alt="..." id="avatar">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/blogpicture2.png" class="d-block w-100" alt="..." id="avatar">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/course_1.jpg" class="d-block w-100" alt="..." id="avatar">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="trangchu__footer">
       <section class="footer__background">
         <div class="footer__left">
 
           <div class="footer__left--icon">
             <p class="footer__title">Follow us</p>
             <div class="footer__icon">
-               <a href="https://www.facebook.com/home.php"> <i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/home.php"> <i class="fab fa-facebook-f"></i></a>
               <a href="https://github.com/Kin-afk-ops/bao_cao_cuoi_ki"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <i class="fab fa-linkedin-in"></i></a>           
+              <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <i
+                  class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
 
@@ -146,12 +190,12 @@
             <div class="footer__about--content">
               <div class="footer__about--item">
                 <a href="#" class="mb-0">About</a>
-                <a href="#" class="mb-0">About</a>    
+                <a href="#" class="mb-0">About</a>
                 <a href="#" class="mb-0">About</a>
               </div>
               <div class="footer__about--item">
                 <a href="#" class="mb-0">About</a>
-                <a href="#" class="mb-0">About</a>    
+                <a href="#" class="mb-0">About</a>
                 <a href="#" class="mb-0">About</a>
               </div>
             </div>
@@ -161,39 +205,47 @@
           <div class="footer__right--email">
             <p class="footer__title">Follow us</p>
             <!--Bấm vào Email thì mở ra ứng dụng Email -->
-            <p class="footer__email"><a href="#" onclick="openGmailCompose()" >Aorus@gmail.com</a></p>
+            <p class="footer__email"><a href="#" onclick="openGmailCompose()">Aorus@gmail.com</a></p>
             <script>
               function openGmailCompose() {
-                var to = 'Aorus@gmail.com';
-                var subject = 'Chủ đề email';
-                var body = 'Nội dung email';
+                var to = 'example@gmail.com'; // Thay đổi email người nhận tại đây
+                var subject = 'Chủ đề email'; // Thay đổi chủ đề email tại đây
+                var body = 'Nội dung email'; // Thay đổi nội dung email tại đây
                 var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
                 window.location.href = mailtoLink;
-                setTimeout(function() {
+                setTimeout(function () {
                   var gmailComposeLink = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=' + to;
                   window.open(gmailComposeLink);
                 }, 500);
               }
             </script>
+
+
             <div class="footer__right--detail">
               <p class="footer__title">Đăng ký</p>
               <p>Để lại email của bạn để nhận được <br> thông báo sớm nhất về khóa học</p>
               <input type="text" class="footer__input">
               <button class="footer__button">Đăng ký</button>
             </div>
-            
+
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
-              $(document).ready(function() { <!--là hàm khởi tạo sự kiện khi trang web đã sẵn sàng.-->
-                $('.footer__button').click(function() { <!--là phần tử button bên trong div có class là footer__right--detail.-->
-                  var email = $('.footer__input').val(); <!--là hàm sự kiện khi người dùng click vào button.-->
-                  console.log("Email đăng ký: " + email); <!-- sẽ in giá trị email được lấy từ input vào console.-->
+              $(document).ready(function () {
+                // Khởi tạo sự kiện khi trang web đã sẵn sàng
+                $('.footer__button').click(function () {
+                  // Lấy giá trị email từ input khi người dùng click vào button
+                  var email = $('.footer__input').val();
+                  // In giá trị email vào console
+                  console.log("Email đăng ký: " + email);
                 });
               });
+
             </script>
-            
+
       </section>
     </footer>
+
+
 
   </body>
 
@@ -246,7 +298,23 @@
   </script>
   <script src="../js/trangchu.js"></script>
 
-
+  <script>
+    var owl = $('.owl-carousel');   <!--Dùng class = .owl-carousel -->
+    owl.owlCarousel({
+      items: 4,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true
+    });
+    $('.play').on('click', function () {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function () {
+      owl.trigger('stop.owl.autoplay')
+    })
+  </script>
   </script>
   <script src="../js/main.js"></script>
 
