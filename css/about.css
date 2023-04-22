@@ -32,8 +32,12 @@
       margin-bottom: 20px;
     }
     #avatar{
-      width: 320px;
-      height: 480px;
+      
+      height: 720px;
+      width: 820x;
+      object-fit: contain;
+      
+      
     }
     .button button {
       background-color: #007bff;
@@ -42,8 +46,15 @@
       padding: 10px 20px;
       font-size: 18px;
       cursor: pointer;
+      vertical-align: text-top;
     }
     
     .button button:hover {
       background-color: #0062cc;
+    }
+    #h1{
+           text-align: center;
+           font-size: 80px;
+           font-family: Georgia ;
+
     }
