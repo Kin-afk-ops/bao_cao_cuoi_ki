@@ -17,18 +17,24 @@
       margin: 0 auto;
     }
     
-    .carousel img {
+    .carousel-item active img {
       display: block;
-      width: 25%;
-      height: auto;
-      
+      height: 200px;
+      margin: auto;
+
     }
-    
+    .d-block w-100 .about__image{
+      align-items: center;    
+      justify-content: center;
+    }
     .button {
       grid-area: button;
       margin-bottom: 20px;
     }
-    
+    #avatar{
+      width: 320px;
+      height: 480px;
+    }
     .button button {
       background-color: #007bff;
       color: #fff;
@@ -41,4 +47,3 @@
     .button button:hover {
       background-color: #0062cc;
     }
-    
