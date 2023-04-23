@@ -1,0 +1,94 @@
+/* Trang chu */
+/* Mobile */
+@media (max-width: 739px) {
+  .trangchu__content--left {
+    display: none;
+  }
+
+  .trangchu__brand {
+    margin-bottom: 25px;
+  }
+
+  .trangchu__content--right {
+    margin-left: 0;
+  }
+
+  .trangchu__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header--right {
+    margin-right: 0;
+  }
+
+  .trangchu__header .header--left p:first-child {
+    font-size: 1rem;
+  }
+
+  .header__search .search__bar input {
+    width: 10rem;
+  }
+
+  .header--right .header__search .avt {
+    margin-left: 12px;
+  }
+
+  .trangchu__carousel {
+    flex-direction: column;
+  }
+
+  .carousel__number .carousel__number--content {
+    flex-wrap: wrap;
+  }
+  .carousel__number--item {
+    margin-right: 10px;
+  }
+
+  .carousel__number--item.chart {
+    margin-top: 10px;
+  }
+
+  .trangchu__mobile--navbar {
+    position: fixed;
+    z-index: 4;
+    width: 160px;
+    background-image: linear-gradient(60deg, #6fa5ce, #f67fd6, #50b3cf);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    border-radius: 0 12px 12px 0;
+    left: -100%;
+    transition: 0.5 ease;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    display: none;
+    left: 0;
+  }
+
+  #open__navbar:checked ~ .trangchu__mobile--navbar {
+    left: 0;
+    transition: 0.5s ease;
+  }
+
+  #open__navbar:checked ~ .overlay {
+    display: block;
+    transition: 0.2s ease;
+  }
+  .open__navbar--icon {
+    font-size: 25px;
+    z-index: 1;
+  }
+}

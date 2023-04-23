@@ -2,411 +2,410 @@
 html,
 body,
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 .trangchu__content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* LEFT NAVBAR */
 
 .trangchu__content--left {
-    width: 18%;
-    background-image: linear-gradient(60deg, #6fa5ce, #f67fd6, #50b3cf);
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    border-radius: 0 12px 12px 0;
+  width: 18%;
+  background-image: linear-gradient(60deg, #6fa5ce, #f67fd6, #50b3cf);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  border-radius: 0 12px 12px 0;
 }
 
-.trangchu__content--left .trangchu__brand {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    justify-content: center;
+.trangchu__brand {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  justify-content: center;
 }
 
-.trangchu__content--left .trangchu__brand .brand__logo {
-    font-size: 40px;
-    color: white;
-    margin-right: 10px;
+.trangchu__brand .brand__logo {
+  font-size: 40px;
+  color: white;
+  margin-right: 10px;
 }
 
-.trangchu__content--left .trangchu__brand .brand__name {
-    font-weight: 600;
-    font-size: 1.4rem;
+.trangchu__brand a {
+  text-decoration: none;
+}
+
+.trangchu__brand .brand__name {
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .trangchu__navbar .navbar__item {
-    list-style-type: none;
-    color: black;
-    position: relative;
+  list-style-type: none;
+  color: black;
+  position: relative;
 }
 
 .trangchu__navbar .navbar__item .navbar__item--content {
-    margin-left: 25%;
-    position: absolute;
-    padding: 8px 0;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all .5s;
+  margin-left: 25%;
+  position: absolute;
+  padding: 8px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.5s;
 }
 
 .trangchu__navbar .navbar__item .navbar__item--content i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .trangchu__navbar .navbar__item .navbar__item--overflow {
-    background-color: white;
-    color: rgba(255, 255, 255, 0) !important;
-    left: 0;
-    top: 0;
-    width: 0;
-    border-radius: 0px 17px 17px 0px;
-    padding: 8px 0;
-    transition: all 0.5s;
+  background-color: white;
+  color: rgba(255, 255, 255, 0) !important;
+  left: 0;
+  top: 0;
+  width: 0;
+  border-radius: 0px 17px 17px 0px;
+  padding: 8px 0;
+  transition: all 0.5s;
 }
 
 .trangchu__navbar .navbar__item:hover .navbar__item--overflow {
-    width: 90%;
+  width: 90%;
 }
 
-
 .trangchu__navbar .navbar__item:hover .navbar__item--content {
-    color: black;
+  color: black;
 }
 
 .trangchu__navbar .navbar__item.active .navbar__item--overflow {
-    width: 90%;
+  width: 90%;
 }
 
 .trangchu__navbar .navbar__item.active .navbar__item--content {
-    color: black;
+  color: black;
 }
-
 
 /* ----------------------- */
 
 .trangchu__content--right {
-    /* background-color: #e9f1f6; */
-    background-color: #d9e9f3;
+  /* background-color: #e9f1f6; */
+  background-color: #d9e9f3;
 
-    margin-left: 18%;
-    padding: 5px 0 20px 20px;
-    width: 100%;
-    max-width: 82%;
-    /* height: 100%; */
+  margin-left: 18%;
+  padding: 5px 0 20px 20px;
+  width: 100%;
+  max-width: 82%;
+  /* height: 100%; */
 }
 
 .trangchu__header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .trangchu__header .header--left {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .trangchu__header .header--left p:first-child {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 3px;
 }
 
 .trangchu__header .header--left p:nth-child(2) {
-    font-size: 1rem;
-    color: rgb(131, 131, 131);
-    font-weight: 400;
+  font-size: 1rem;
+  color: rgb(131, 131, 131);
+  font-weight: 400;
 }
 
 .header--right {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .header--right .header__search {
-    display: flex;
-    align-items: center;
-    height: 5rem;
+  display: flex;
+  align-items: center;
+  height: 5rem;
 }
 
 .header__search .search__bar {
-    background-color: white;
-    border-radius: 12px;
-    cursor: pointer;
-    padding-right: 10px;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  padding-right: 10px;
 }
 
 .header__search .search__bar input {
-    font-size: 16px;
-    color: #8f8f8f;
-    border: none;
-    width: 22rem;
-    border-radius: 12px;
-    padding: 7px 15px 7px 15px;
+  font-size: 16px;
+  color: #8f8f8f;
+  border: none;
+  width: 22rem;
+  border-radius: 12px;
+  padding: 7px 15px 7px 15px;
 }
 
 .header__search .search__bar input:focus {
-    border: 2px black solid;
+  border: 2px black solid;
 }
 
 .header__search .search__bar a {
-    color: gray;
-    padding: 0 10px;
+  color: gray;
+  padding: 0 10px;
 }
 
 .header--right .header__search .avt {
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    margin-left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  margin-left: 30px;
 }
 
 .trangchu__carousel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .carousel__number .carousel__number--content {
-    display: flex;
+  display: flex;
 }
 
 .carousel__number .carousel__number--item {
-    background-color: white;
-    width: 120px;
-    height: 160px;
-    border-radius: 12px;
-    margin-right: 20px;
+  background-color: white;
+  width: 120px;
+  height: 160px;
+  border-radius: 12px;
+  margin-right: 20px;
 }
 
 .carousel__number .carousel__number--item p {
-    margin: 20px;
+  margin: 20px;
 }
 
 .carousel__number--item.chart {
-    width: 220px;
-    display: flex;
-    align-items: center;
+  width: 220px;
+  display: flex;
+  align-items: center;
 }
 
 .carousel__number--item.chart img {
-    height: 80px;
-    width: 80px;
+  height: 80px;
+  width: 80px;
 }
 
 .carousel__number .carousel__number--item p:first-child {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .carousel__number .carousel__number--item p:last-child {
-    font-size: 1rem;
-    font-weight: 400;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* ---------------------------------------- */
 
 .carousel__title {
-    font-weight: bold;
-    margin: 20px 0;
-    font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 1.2rem;
 }
 
 .carousel__title a {
-    float: right;
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.875rem;
-    flex-wrap: nowrap;
-    line-height: 1.8rem;
-    margin-right: 1rem;
+  float: right;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-wrap: nowrap;
+  line-height: 1.8rem;
+  margin-right: 1rem;
 }
 
 .carousel__title i {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .carousel__history {
-    overflow: hidden;
-    margin-right: 50px;
+  overflow: hidden;
+  margin-right: 50px;
 }
 
 .carousel__history--content {
-    display: flex;
+  display: flex;
 }
 
 .carousel__history--item {
-    height: 160px;
-    background-color: #ffffff;
-    margin-right: 20px;
-    border-radius: 12px;
-    width: 200px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
+  height: 160px;
+  background-color: #ffffff;
+  margin-right: 20px;
+  border-radius: 12px;
+  width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .carousel__history--item .history__thumbnail {
-    border-radius: 12px 12px 0 0;
-    width: 200px;
-    height: 100px;
-
+  border-radius: 12px 12px 0 0;
+  width: 200px;
+  height: 100px;
 }
 
 .carousel__history--item p:last-child {
-    font-size: 0.75rem;
-    color: #8f8f8f;
-    margin-left: 10px;
-
+  font-size: 0.75rem;
+  color: #8f8f8f;
+  margin-left: 10px;
 }
 
 .carousel__history--item .history__text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 0.875rem;
-    margin-left: 10px;
-    margin-bottom: 0;
-    margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .trangchu__course .course__title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .course__content .course__item {
-    border-radius: 12px;
-    background-color: white;
-    width: 280px;
-    margin-right: 20px;
-    overflow: hidden;
+  border-radius: 12px;
+  background-color: white;
+  width: 280px;
+  margin-right: 20px;
+  overflow: hidden;
 }
 
 .course__content .course__item .course__thumbnail {
-    width: 280px;
-    height: 150px;
-    border-radius: 12px 12px 0 0;
+  width: 280px;
+  height: 150px;
+  border-radius: 12px 12px 0 0;
 }
 
 .course__thumbnail--descrip {
-    padding: 15px 0 5px 20px;
+  padding: 15px 0 5px 20px;
 }
 
 .course__thumbnail--descrip .course__text {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .course__thumbnail--descrip .course__number {
-    font-size: 0.875rem;
-    color: #8f8f8f;
+  font-size: 0.875rem;
+  color: #8f8f8f;
 }
-
 
 /* FOOTER */
 .trangchu__footer {
-    background-color: rgb(255, 255, 255);
-    margin-left: 18%;
-    border-radius: 12px 12px 0 0;
-    height: 15rem;
-    padding: 30px 0;
-
+  background-color: rgb(255, 255, 255);
+  margin-left: 18%;
+  border-radius: 12px 12px 0 0;
+  height: 15rem;
+  padding: 30px 0;
 }
 
 .footer__background {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
 }
 
 .footer__left--icon .footer__icon {
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 15px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .footer__icon i {
-    font-size: 1rem;
-    border: 1px solid black;
-    margin-right: 10px;
-    width: 1.8rem;
-    height: 1.8rem;
-    text-align: center;
-    line-height: 1.8rem;
-    transition: all 0.3s;
+  font-size: 1rem;
+  border: 1px solid black;
+  margin-right: 10px;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  line-height: 1.8rem;
+  transition: all 0.3s;
 }
 
 .footer__icon i:hover {
-    color: #f67fd6;
-    border: 1px solid #f67fd6;
+  color: #f67fd6;
+  border: 1px solid #f67fd6;
 }
 
 .footer__title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #8f8f8f;
-    margin-bottom: 20px !important;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 20px !important;
 }
 
 .footer__title .collapse .card--bs-card-border-width {
-    border: none !important;
-    color: white;
+  border: none !important;
+  color: white;
 }
 
 .footer__right--email .footer__email {
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: all 0.3s;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
 .footer__right--email .footer__email:hover {
-    color: #f67fd6;
+  color: #f67fd6;
 }
 
 .footer__about--content {
-    display: flex;
+  display: flex;
 }
 
 .footer__about--item a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding-bottom: 5px;
-    font-size: 0.9rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
 }
 
 .footer__about--content .footer__about--item {
-    margin-right: 7rem;
+  margin-right: 7rem;
 }
 
 .footer__right--detail .footer__input {
-    border-radius: 15px;
-    margin-bottom: 30px;
-    padding: 2px 10px;
-    border: 1px solid #8f8f8f;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 2px 10px;
+  border: 1px solid #8f8f8f;
 }
 
 .footer__right--detail button {
-    padding: 2px 10px;
-    border-radius: 12px;
-    border: 1px solid #8f8f8f;
-    background-color: #f67fd6;
+  padding: 2px 10px;
+  border-radius: 12px;
+  border: 1px solid #8f8f8f;
+  background-color: #f67fd6;
 }
+
+/* mobile navbar */

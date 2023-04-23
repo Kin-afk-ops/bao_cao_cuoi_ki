@@ -23,16 +23,24 @@
 
     <!-- Trang chủ CSS -->
     <link rel="stylesheet" href="../css/trangchu.css" />
+
+    <!-- Responsive  -->
+    <link rel="stylesheet" href="../css/main_responsive.css">
   </head>
 
   <body>
     <section class="trangchu__content">
+
+    
+
+    
       <div class="trangchu__content--left">
         <div class="trangchu__brand">
-          <a href="#" class="brand__logo">
+          <a href="trangchu.html" class="brand__logo">
             <i class="fab fa-react"></i>
+            <p class="brand__name mb-0">Aorus</p>
           </a>
-          <p class="brand__name mb-0">Aorus</p>
+         
         </div>
 
         <div class="trangchu__navbar">
@@ -84,44 +92,119 @@
         </div>
       </div>
 
-      <div class="trangchu__content--right">
-        <!-- Header -->
-        <div class="trangchu__header">
-          <div class="header--left">
-            <p id="header__hello"></p>
-            <p>You're doing great this week. Keep it up!</p>
-          </div>
+    
 
-          <div class="header--right">
-            <div class="header__search">
-              <div class="search__bar">
-                <input type="text" placeholder="What do you want to learn ?" />
-                <a href="">
-                  <i class="fa fa-search"></i>
+   
+        <div class="trangchu__content--right">
+         
+            
+
+  
+          <!-- Header -->
+          <div class="trangchu__header">
+            <div class="header--left">
+              <p id="header__hello"></p>
+              <p>You're doing great this week. Keep it up!</p>
+            </div>
+
+            <!-- open mobile navbar -->
+            <label class="open__navbar--icon" for="open__navbar">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <input class="d-none" type="checkbox" name="open__navbar" id="open__navbar">
+            <label for="open__navbar" class="overlay"></label>
+
+            
+            <div class="trangchu__mobile--navbar">
+              <div class="trangchu__brand">
+                <a href="trangchu.html" class="brand__logo">
+                  <i class="fab fa-react"></i>
+                  <p class="brand__name mb-0">Aorus</p>
                 </a>
+              
               </div>
-
-              <div class="dropdown">
-                <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="../image/avatar.jpg" class="avt" alt="" />
-                </div>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
+      
+              <div class="trangchu__navbar">
+                <ul class="ps-0">
+                  <li class="navbar__item active">
+                    <a href="#" class="navbar__item--content">
+                      <i class="fa fa-home"></i>
+                      Trang chủ
+                    </a>
+                    <div class="navbar__item--overflow">.</div>
                   </li>
-                  <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                  <li>
-                    <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
+                  <li class="navbar__item">
+                    <a href="./khoahoc.html" class="navbar__item--content">
+                      <i class="fa fa-book-open"></i>
+                      Khóa học
+                    </a>
+                    <div class="navbar__item--overflow">.</div>
+                  </li>
+                  <li class="navbar__item">
+                    <a href="./blog.html" class="navbar__item--content">
+                      <i class="fab fa-blogger"></i>
+                      Blog
+                    </a>
+                    <div class="navbar__item--overflow">.</div>
+                  </li>
+                  <li class="navbar__item">
+                    <a href="" class="navbar__item--content">
+                      <i class="fa fa-comment-alt"></i>
+                      FeedBack
+                    </a>
+                    <div class="navbar__item--overflow">.</div>
+                  </li>
+                  <li class="navbar__item">
+                    <a href="./about.html" class="navbar__item--content">
+                      <i class="fa fa-users"></i>
+                      About
+                    </a>
+                    <div class="navbar__item--overflow">.</div>
+                  </li>
+      
+                  <li class="navbar__item active">
+                    <a href="video.html" class="navbar__item--content"> <!--Liên kết about-->
+                      <i class="fa fa-users"></i>
+                      Video
+                    </a>
+                    <div class="navbar__item--overflow">.</div>
                   </li>
                 </ul>
               </div>
+            </div>
 
-              <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
-                Đăng nhập
-              </a>
+            
+  
+            <div class="header--right">
+              <div class="header__search">
+                <div class="search__bar">
+                  <input type="text" placeholder="What do you want to learn ?" />
+                  <a href="">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+  
+                <div class="dropdown">
+                  <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../image/avatar.jpg" class="avt" alt="" />
+                  </div>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                    <li>
+                      <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
+                  Đăng nhập
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
         <!-- Number -->
         <div class="trangchu__carousel">
@@ -280,8 +363,8 @@
       </section>
     </footer>
 
-  </body>
 
+    
   <!-- Thư viện hỗ trợ JQuery 3.6.4-->
   <script src="../js/jquery-3.6.4.min.js"></script>
 
@@ -290,11 +373,7 @@
 
   <!-- OWL Carousel JS -->
   <script src="../js/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel();
-    });
-  </script>
+
 
   <script>
     $(".owl-carousel").owlCarousel({
@@ -329,10 +408,9 @@
       },
     });
   </script>
-  <script src="../js/trangchu.js"></script>
-
-
-  </script>
   <script src="../js/main.js"></script>
+  </body>
+
+
 
   </html>
