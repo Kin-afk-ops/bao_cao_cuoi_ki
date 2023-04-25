@@ -1,0 +1,16 @@
+/* Tablet */
+@media (max-width: 1023px) {
+}
+
+/* small Mobile */
+
+@media (max-width: 768px) {
+  .w-mobile {
+    width: 75% !important;
+  }
+
+  .modal__item {
+    width: 77%;
+    height: 65%;
+  }
+}

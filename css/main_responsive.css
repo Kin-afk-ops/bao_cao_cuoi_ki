@@ -1,5 +1,14 @@
 /* Trang chu */
 /* Mobile */
+
+.mobile__navbar {
+  display: none;
+}
+
+.open__navbar--icon {
+  display: none;
+}
+
 @media (max-width: 739px) {
   .trangchu__content--left {
     display: none;
@@ -49,7 +58,10 @@
     margin-top: 10px;
   }
 
-  .trangchu__mobile--navbar {
+  /* mobile navbar */
+
+  .mobile__navbar {
+    display: block;
     position: fixed;
     z-index: 4;
     width: 160px;
@@ -78,7 +90,7 @@
     left: 0;
   }
 
-  #open__navbar:checked ~ .trangchu__mobile--navbar {
+  #open__navbar:checked ~ .mobile__navbar {
     left: 0;
     transition: 0.5s ease;
   }
@@ -88,6 +100,7 @@
     transition: 0.2s ease;
   }
   .open__navbar--icon {
+    display: block;
     font-size: 25px;
     z-index: 1;
   }
