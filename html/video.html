@@ -1,29 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<htmll lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khóa Học</title>
+    <title>About</title>
+    <link rel="icon" href="../image/background.png" />
 
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/about.css">
     <!-- Font awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="../Font/fontawesome-free-6.4.0-web/css/all.css"
-    />
+    <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
     <!-- Main CSS  -->
     <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="../css/trangchu.css" />
+    <link rel="stylesheet" href="../css/video.css"/>
   </head>
 
-  <body></body>
+  <body>
+    <!--Phần Nav -->
+    <section class="trangchu__content">
+      <div class="trangchu__content--left">
+        <div class="trangchu__brand">
+          <a href="trangchu.html" class="brand__logo"> <!--Nav trang chủ-->
+            <i class="fab fa-react"></i>
+          </a>
+          <p class="brand__name mb-0">Aorus</p> <!--Bấm logo trả về trang chủ-->
+        </div>
+
+        <div class="trangchu__navbar">
+          <ul class="ps-0">
+            <li class="navbar__item">
+              <a href="trangchu.html" class="navbar__item--content"> <!--Liên kết trang chủ-->
+                <i class="fa fa-home"></i>
+                Trang chủ
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="khoahoc.html" class="navbar__item--content"> <!--Liên kết khóa học-->
+                <i class="fa fa-book-open"></i>
+                Khóa học
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="blog.html" class="navbar__item--content"> <!--Liên kết Blog-->
+                <i class="fab fa-blogger"></i>
+                Blog
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="" class="navbar__item--content"> <!--Phần Feedback-->
+                <i class="fa fa-comment-alt"></i>
+                FeedBack
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item ">
+              <a href="about.html" class="navbar__item--content"> <!--Liên kết about-->
+                <i class="fa fa-users"></i>
+                About
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item active">
+              <a href="video.html" class="navbar__item--content"> <!--Liên kết about-->
+                <i class="fa fa-users"></i>
+                Video
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trangchu__content--right">
+        <!-- Header -->
+        <div class="trangchu__header">
+          <div class="header--left">
+            <p>Welcome Back, Alex!</p>
+            <p>You're doing great this week. Keep it up!</p>
+          </div>
+
+          <div class="header--right">
+            <div class="header__search">
+              <div class="search__bar">
+                <input type="text" placeholder="What do you want to learn ?" />
+                <a href="">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+
+              <div class="dropdown">
+                <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../image/avatar.jpg" class="avt" alt="" />
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                  <li>
+                    <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
+                Đăng nhập
+              </a>
+              <a href="dangky.html" class="header__login--buton btn btn-primary mx-2">
+                Đăng ký
+              </a>
+            </div>
+          </div>
+        </div>
+       
+   
+        <!--Nội dung chính-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <figure>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/gX54HnLpiog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="col-md-3">
+              <!--Phần cột trái-->
+             
+              <div class="card " style="width: 300px; height: 200px; overflow-y: scroll;">
+              
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"> <a href="#">Lập trình hướng đối tượng #1: OOP là cái gì?</a>  </li>
+                  
+                  <li class="list-group-item"><a href="">Giới thiệu về quy tắc SOLID: Kĩ năng cần có của một dev trình cao</a></li>
+                  <li class="list-group-item"><a href="">Phân tích quy tắc S trong Solid: Single responsibility principle</a></li>
+                  <li class="list-group-item"><a href="">Phân tích quy tắc O trong Solid: Open/Closed principle</a></li>
+                  
+                  <div id="test">
+
+
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  
+                </ul>
+              </div>
+              
+                
+              
+          
+             <!--Kết thúc phần cột trái-->
+            </div>
+          </div>
+        </div>
+        
+        <!--Kết thúc phần nội dung-->
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="trangchu__footer">
+      <section class="footer__background">
+        <div class="footer__left">
+
+          <div class="footer__left--icon">
+            <p class="footer__title">Follow us</p>
+            <div class="footer__icon">
+              <a href="https://www.facebook.com/home.php"> <i class="fab fa-facebook-f"></i></a>
+              <a href="https://github.com/Kin-afk-ops/bao_cao_cuoi_ki"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <i
+                  class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer__left--detail">
+            <p class="footer__title">Thông tin</p>
+            <div class="footer__about--content">
+              <div class="footer__about--item">
+                <a href="#" class="mb-0">About</a>
+                <a href="#" class="mb-0">About</a>
+                <a href="#" class="mb-0">About</a>
+              </div>
+              <div class="footer__about--item">
+                <a href="#" class="mb-0">About</a>
+                <a href="#" class="mb-0">About</a>
+                <a href="#" class="mb-0">About</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right--email">
+            <p class="footer__title">Follow us</p>
+            <!--Bấm vào Email thì mở ra ứng dụng Email -->
+            <p class="footer__email"><a href="#" onclick="openGmailCompose()">Aorus@gmail.com</a></p>
+            <script>
+              function openGmailCompose() {
+                var to = 'example@gmail.com'; // Thay đổi email người nhận tại đây
+                var subject = 'Chủ đề email'; // Thay đổi chủ đề email tại đây
+                var body = 'Nội dung email'; // Thay đổi nội dung email tại đây
+                var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                window.location.href = mailtoLink;
+                setTimeout(function () {
+                  var gmailComposeLink = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=' + to;
+                  window.open(gmailComposeLink);
+                }, 500);
+              }
+            </script>
+
+
+            <div class="footer__right--detail">
+              <p class="footer__title">Đăng ký</p>
+              <p>Để lại email của bạn để nhận được <br> thông báo sớm nhất về khóa học</p>
+              <input type="text" class="footer__input">
+              <button class="footer__button">Đăng ký</button>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              $(document).ready(function () {
+                // Khởi tạo sự kiện khi trang web đã sẵn sàng
+                $('.footer__button').click(function () {
+                  // Lấy giá trị email từ input khi người dùng click vào button
+                  var email = $('.footer__input').val();
+                  // In giá trị email vào console
+                  console.log("Email đăng ký: " + email);
+                });
+              });
+
+            </script>
+
+      </section>
+    </footer>
+
+
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+  </body>
 
   <!-- Thư viện hỗ trợ JQuery 3.6.4-->
   <script src="../js/jquery-3.6.4.min.js"></script>
 
   <!-- Bootstrap JS 5.3.0  -->
   <script src="../js/bootstrap.bundle.min.js"></script>
-</html>
+
+  <!-- OWL Carousel JS -->
+  <script src="../js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
+
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: false,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        576: {
+          items: 1.8,
+        },
+        900: {
+          items: 2.5,
+        },
+        1200: {
+          items: 3,
+        },
+        1300: {
+          items: 3.5,
+        },
+        1400: {
+          items: 4,
+        },
+        1600: {
+          items: 4.5,
+        },
+        1800: {
+          items: 5,
+        },
+      },
+    });
+  </script>
+  <script src="../js/trangchu.js"></script>
+
+  <script>
+    var owl = $('.owl-carousel');   <!--Dùng class = .owl-carousel -->
+    owl.owlCarousel({
+      items: 4,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true
+    });
+    $('.play').on('click', function () {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function () {
+      owl.trigger('stop.owl.autoplay')
+    })
+  </script>
+  </script>
+  <script src="../js/main.js"></script>
+
+  </html>
