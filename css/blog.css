@@ -1,0 +1,32 @@
+.blog__content {
+    width: 1820px;
+    margin-bottom: 20px;
+}
+
+.blog__item {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+ 
+    
+    padding: 20px 30px;
+    justify-content: space-around;
+}
+
+.blog__image {
+    width: 300px;
+    display: block; 
+}
+
+.blog__image img {
+    border-radius: 12px;
+}
+
+.blog__item .card-text {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.blog__item--content {
+
+}
