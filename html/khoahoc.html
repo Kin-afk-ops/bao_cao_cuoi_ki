@@ -90,12 +90,12 @@
 
 
 
-        <!-- Header -->
-        <div class="trangchu__header">
-          <div class="header--left">
-            <p id="header__hello"></p>
-            <p>You're doing great this week. Keep it up!</p>
-          </div>
+      <!-- Header -->
+      <div class="trangchu__header">
+        <div class="header--left">
+          <p>Hãy bắt đầu một bài học mới, Alex!</p>
+          <p>Luyện mãi thành tài, miệt mài tất giỏi</p>
+        </div>
 
           <!-- open mobile navbar -->
           <label class="open__navbar--icon" for="open__navbar">
@@ -165,22 +165,18 @@
                 <input type="text" placeholder="Tìm kím khóa học" />
               </div>
 
-              <div class="dropdown">
-                <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="../image/avatar.jpg" class="avt" alt="" />
-                </div>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                  <li>
-                    <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
-                  </li>
-                </ul>
+            <div class="dropdown">
+              <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../image/avatar.jpg" class="avt" alt="">
               </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./profile.html">Trang cá nhân</a></li>
+                <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+              </ul>
+            </div>
 
-              <a href="dangnhap.html" class="header__login--buton btn btn-primary ms-2 me-10">
+              <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
                 Đăng nhập
               </a>
             </div>
@@ -342,7 +338,7 @@
 
 
 
-          </div>
+        </div>
 
 
         </div>
@@ -488,20 +484,17 @@
         margin: 10,
         responsiveClass: true,
         responsive: {
-          0: {
+          0 : {
             items: 1,
           },
           390: {
-            items: 1.4,
+            items: 1.2,
           },
-          600: {
-            items: 2,
-          },
-          820: {
-            items: 2.8,
+          820 : {
+            items: 3,
           },
           1200: {
-            items: 3.5,
+            items: 4,
           },
         },
       });

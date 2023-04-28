@@ -277,17 +277,12 @@
     height: 160px;
     border-radius: 12px;
   }
-
-  /* .carousel__history--content .owl-item {
-    width: 1000px;
-  } */
-
   .carousel__history--item {  
-    height: 160px;
+    height: 6rem;
+    width: 100%;
     background-color: #ffffff;  
     margin-right: 20px;
     border-radius: 12px;
-    width: 200px;
     cursor: pointer;
     text-decoration: none;
     color: black;
@@ -295,7 +290,6 @@
 
   .carousel__history--item .history__thumbnail {
     border-radius: 12px 12px 0 0;
-    width: 2000px;
     height: 100px;
   }
 

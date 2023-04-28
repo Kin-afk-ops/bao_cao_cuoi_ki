@@ -44,7 +44,7 @@ $(document).ready(function () {
     $("#header__hello").html("Hello!");
   } else {
     buttonLogin.addClass("d-none");
-    $("#header__hello").html("Welcome Back, " + currentName + "!");
+    $("#header__hello").html(currentName + "!");
   }
 
   var day = date.getDate().toString();

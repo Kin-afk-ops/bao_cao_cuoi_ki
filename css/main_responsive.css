@@ -140,4 +140,9 @@
   .footer__icon i {
     margin-right: 0;
   }
+  
+  .carousel__history--item .history__thumbnail {
+    width: 120px;
+    border-radius: 12px 12px 0 0;
+  }
 }
