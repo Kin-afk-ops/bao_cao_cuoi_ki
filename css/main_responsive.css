@@ -9,7 +9,7 @@
   display: none;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 1200px) {
   .trangchu__content--left {
     display: none;
   }
@@ -36,7 +36,7 @@
   }
 
   .header__search .search__bar input {
-    width: 10rem;
+    width: 80%; 
   }
 
   .header--right .header__search .avt {
@@ -50,6 +50,7 @@
   .carousel__number .carousel__number--content {
     flex-wrap: wrap;
   }
+
   .carousel__number--item {
     margin-right: 10px;
   }
@@ -64,7 +65,7 @@
     display: block;
     position: fixed;
     z-index: 4;
-    width: 160px;
+    width: 260px;
     background-image: linear-gradient(60deg, #6fa5ce, #f67fd6, #50b3cf);
     display: flex;
     flex-direction: column;
@@ -75,7 +76,6 @@
     top: 0;
     border-radius: 0 12px 12px 0;
     left: -100%;
-    transition: 0.5 ease;
   }
 
   .overlay {
@@ -90,18 +90,22 @@
     left: 0;
   }
 
-  #open__navbar:checked ~ .mobile__navbar {
-    left: 0;
+  #open__navbar~.mobile__navbar {
     transition: 0.5s ease;
   }
 
-  #open__navbar:checked ~ .overlay {
-    display: block;
-    transition: 0.2s ease;
+  #open__navbar:checked~.mobile__navbar {
+    left: 0;
   }
+
+  #open__navbar:checked~.overlay {
+    display: block;
+  }
+
   .open__navbar--icon {
     display: block;
     font-size: 25px;
     z-index: 1;
   }
 }
+
