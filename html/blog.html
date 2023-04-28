@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ</title>
+    <title>Blog</title>
     <link rel="icon" href="../image/background.png" />
 
     <!-- Owl Carousel  -->
@@ -34,16 +34,16 @@
   <body>
     <section class="trangchu__content">
 
-    
 
-    
+
+
       <div class="trangchu__content--left">
         <div class="trangchu__brand">
           <a href="trangchu.html" class="brand__logo">
             <i class="fab fa-react"></i>
             <p class="brand__name mb-0">Aorus</p>
           </a>
-         
+
         </div>
 
         <div class="trangchu__navbar">
@@ -95,152 +95,123 @@
         </div>
       </div>
 
-    
 
-   
-        <div class="trangchu__content--right">
-         
-            
 
-  
-          <!-- Header -->
-          <div class="trangchu__header">
-            <div class="header--left">
-              <p>Welcome Back, <span id="header__hello"></span></p>
-              <p>You're doing great this week. Keep it up!</p>
+
+      <div class="trangchu__content--right">
+
+
+
+
+        <!-- Header -->
+        <div class="trangchu__header">
+          <div class="header--left">
+            <p>Welcome Back, <span id="header__hello"></span></p>
+            <p>You're doing great this week. Keep it up!</p>
+          </div>
+
+          <!-- open mobile navbar -->
+          <label class="open__navbar--icon" for="open__navbar">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input class="d-none" type="checkbox" name="open__navbar" id="open__navbar">
+          <label for="open__navbar" class="overlay"></label>
+
+
+          <div class="mobile__navbar">
+            <div class="trangchu__brand">
+              <a href="trangchu.html" class="brand__logo">
+                <i class="fab fa-react"></i>
+                <p class="brand__name mb-0">Aorus</p>
+              </a>
+
             </div>
 
-            <!-- open mobile navbar -->
-            <label class="open__navbar--icon" for="open__navbar">
-              <i class="fa-solid fa-bars"></i>
-            </label>
-            <input class="d-none" type="checkbox" name="open__navbar" id="open__navbar">
-            <label for="open__navbar" class="overlay"></label>
+            <div class="trangchu__navbar">
+              <ul class="ps-0">
+                <li class="navbar__item active">
+                  <a href="#" class="navbar__item--content">
+                    <i class="fa fa-home"></i>
+                    Trang chủ
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item">
+                  <a href="./khoahoc.html" class="navbar__item--content">
+                    <i class="fa fa-book-open"></i>
+                    Khóa học
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item">
+                  <a href="./blog.html" class="navbar__item--content">
+                    <i class="fab fa-blogger"></i>
+                    Blog
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item">
+                  <a href="" class="navbar__item--content">
+                    <i class="fa fa-comment-alt"></i>
+                    FeedBack
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item">
+                  <a href="./about.html" class="navbar__item--content">
+                    <i class="fa fa-users"></i>
+                    About
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
 
-            
-            <div class="mobile__navbar">
-              <div class="trangchu__brand">
-                <a href="trangchu.html" class="brand__logo">
-                  <i class="fab fa-react"></i>
-                  <p class="brand__name mb-0">Aorus</p>
+                <li class="navbar__item active">
+                  <a href="video.html" class="navbar__item--content"> <!--Liên kết about-->
+                    <i class="fa fa-users"></i>
+                    Video
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="header--right">
+            <div class="header__search">
+              <div class="search__bar">
+                <input type="text" placeholder="What do you want to learn ?" />
+                <a href="">
+                  <i class="fa fa-search"></i>
                 </a>
-              
               </div>
-      
-              <div class="trangchu__navbar">
-                <ul class="ps-0">
-                  <li class="navbar__item active">
-                    <a href="#" class="navbar__item--content">
-                      <i class="fa fa-home"></i>
-                      Trang chủ
-                    </a>
-                    <div class="navbar__item--overflow">.</div>
+
+              <div class="dropdown">
+                <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../image/avatar.jpg" class="avt" alt="" />
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
                   </li>
-                  <li class="navbar__item">
-                    <a href="./khoahoc.html" class="navbar__item--content">
-                      <i class="fa fa-book-open"></i>
-                      Khóa học
-                    </a>
-                    <div class="navbar__item--overflow">.</div>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="./blog.html" class="navbar__item--content">
-                      <i class="fab fa-blogger"></i>
-                      Blog
-                    </a>
-                    <div class="navbar__item--overflow">.</div>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="" class="navbar__item--content">
-                      <i class="fa fa-comment-alt"></i>
-                      FeedBack
-                    </a>
-                    <div class="navbar__item--overflow">.</div>
-                  </li>
-                  <li class="navbar__item">
-                    <a href="./about.html" class="navbar__item--content">
-                      <i class="fa fa-users"></i>
-                      About
-                    </a>
-                    <div class="navbar__item--overflow">.</div>
-                  </li>
-      
-                  <li class="navbar__item active">
-                    <a href="video.html" class="navbar__item--content"> <!--Liên kết about-->
-                      <i class="fa fa-users"></i>
-                      Video
-                    </a>
-                    <div class="navbar__item--overflow">.</div>
+                  <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                  <li>
+                    <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
                   </li>
                 </ul>
               </div>
-            </div>
 
-            
-  
-            <div class="header--right">
-              <div class="header__search">
-                <div class="search__bar">
-                  <input type="text" placeholder="What do you want to learn ?" />
-                  <a href="">
-                    <i class="fa fa-search"></i>
-                  </a>
-                </div>
-  
-                <div class="dropdown">
-                  <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../image/avatar.jpg" class="avt" alt="" />
-                  </div>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                    <li>
-                      <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
-                    </li>
-                  </ul>
-                </div>
-  
-                <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
-                  Đăng nhập
-                </a>
-              </div>
+              <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
+                Đăng nhập
+              </a>
             </div>
           </div>
+        </div>
 
         <!-- Blog 1 -->
-          <div class="row g-0 blog__content">
-            <div class="col-md-8 blog__item">
-
-              <div class="card-body">
-                <h5 class="card-title"><b>Xu thế chọn ngành hiện nay</b></h5>
-                <p class="card-text">
-                  Nếu bạn đang phân vân trong việc chọn ngành, chuyển ngành thì
-                  có thể tham khảo bài viết này để biết ngành gì đang hot hiện
-                  nay và top các ngành nghề được dự đoán sẽ trở thành xu thế
-                  nhé!...
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"></small>
-                </p>
-                <a href="" class="btn btn-primary">Read more</a>
-              </div>
-              
-              <div class="col-md-2 blog__image">
-                <img
-                  src="../image/blogpicture1.png"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-
-            </div>
-          </div>
-
-        <!-- Blog 2 -->
         <div class="row g-0 blog__content">
-          <div class="blog__item">
+          <div class="col-md-8 blog__item">
 
             <div class="card-body">
               <h5 class="card-title"><b>Xu thế chọn ngành hiện nay</b></h5>
@@ -253,23 +224,158 @@
               <p class="card-text">
                 <small class="text-body-secondary"></small>
               </p>
-              <a href="" class="btn btn-primary mt-5">Read more</a>
+              <a href="../html/blog1.html" class="btn btn-primary mt-5">Xem thêm</a>
             </div>
-            
-            <div class="col-md-2 blog__image">
-              <img
-                src="../image/blogpicture1.png"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
+
+            <div class="col-md-8 blog__image">
+              <img src="../image/blogpicture1.png" class="img-fluid" alt="..." />
             </div>
 
           </div>
         </div>
+
+        <!-- Blog 2 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Lương lập trình website cao hay thấp? Cơ hội nghề nghiệp ra sao?</b></h5>
+              <p class="card-text">
+                Trong những năm gần đây, nghề IT đã trở thành một nghề siêu hot với mức thu nhập được cho là “cực
+                khủng”. Vậy với ngách lập trình website thì sao? Lương lập trình website cao hay thấp?
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-5">Xem thêm</a>
+            </div>
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture2.png" class="img-fluid" alt="..." />
+            </div>
+
+          </div>
+        </div>
+
         <!-- Blog 3 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Góc chia sẻ: Nữ giới có nên lựa chọn theo nghề IT không? </b></h5>
+              <p class="card-text">
+                Mình đã từng được nghe cô tư vấn nói với một bạn nữ có ý định theo ngành IT rằng “là con gái, đừng nên
+                chọn IT vì sẽ rất vất vả”. Vậy thực tế, nữ giới có nên lựa chọn theo nghề IT không?
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-5">Xem thêm</a>
+            </div>
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/Blogpicture3.png" class="img-fluid" alt="..." />
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Khám phá IT là gì? Những vị trí đang phổ biến trong ngành IT</b></h5>
+              <p class="card-text">
+                Ai cũng biết IT là một ngành hot bởi nó có thể đem lại mức thu nhập rất “khủng”, tuy nhiên vẫn còn nhiều
+                người chưa rõ IT là gì và cụ thể trong ngành IT sẽ có những vị trí công việc nào? Hãy tìm hiểu.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-5">Xem thêm</a>
+            </div>
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture4.png" class="img-fluid" alt="..." />
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 5 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Fullstack là gì? Cần kỹ năng gì để trở thành fullstack developer?</b></h5>
+              <p class="card-text">
+                Ai cũng biết IT là một ngành hot bởi nó có thể đem lại mức thu nhập rất “khủng”, tuy nhiên vẫn còn nhiều
+                người chưa rõ IT là gì và cụ thể trong ngành IT sẽ có những vị trí công việc nào? Hãy tìm hiểu.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-5">Xem thêm</a>
+            </div>
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture5.png" class="img-fluid" alt="..." />
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 6 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Ngôn ngữ lập trình là gì? Các ngôn ngữ lập trình phổ biến nhất hiện nay </b>
+              </h5>
+              <p class="card-text">
+                “Ngôn ngữ lập trình là gì, tại sao phải sử dụng ngôn ngữ lập trình để giao tiếp với máy tính?” là câu
+                hỏi được nhiều người mới làm quen với IT thắc mắc nhất. Cùng theo dõi bài viết để hiểu rõ hơn nhé!
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-5">Xem thêm</a>
+            </div>
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture6.png" class="img-fluid" alt="..." />
+            </div>
+
+          </div>
+        </div>
+
+        <!-- blog 7 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="card-body">
+              <h5 class="card-title"><b>So sánh JavaScript với những đối thủ khác như C, Java và Python</b>
+              </h5>
+              <p class="card-text">
+                Nếu bạn không nắm được JavaScript là gì thì khó mà tiến xa được trong lĩnh vực IT. JavaScript không đáng
+                sợ như mọi người đồn. Nhưng trước hết bạn cần nắm được
+                những điều cơ bản về JavaScript.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-5">Xem thêm</a>
+            </div>
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture7.png" class="img-fluid" alt="..." />
+            </div>
+
+          </div>
+        </div>
 
 
-        
       </div>
     </section>
     <!-- Footer -->
@@ -291,12 +397,12 @@
             <div class="footer__about--content">
               <div class="footer__about--item">
                 <a href="#" class="mb-0">About</a>
-                <a href="#" class="mb-0">About</a>    
+                <a href="#" class="mb-0">About</a>
                 <a href="#" class="mb-0">About</a>
               </div>
               <div class="footer__about--item">
                 <a href="#" class="mb-0">About</a>
-                <a href="#" class="mb-0">About</a>    
+                <a href="#" class="mb-0">About</a>
                 <a href="#" class="mb-0">About</a>
               </div>
             </div>
@@ -317,51 +423,51 @@
     </footer>
 
 
-    
-  <!-- Thư viện hỗ trợ JQuery 3.6.4-->
-  <script src="../js/jquery-3.6.4.min.js"></script>
 
-  <!-- Bootstrap JS 5.3.0  -->
-  <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Thư viện hỗ trợ JQuery 3.6.4-->
+    <script src="../js/jquery-3.6.4.min.js"></script>
 
-  <!-- OWL Carousel JS -->
-  <script src="../js/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS 5.3.0  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL Carousel JS -->
+    <script src="../js/owl.carousel.min.js"></script>
 
 
-  <script>
-    $(".owl-carousel").owlCarousel({
-      loop: false,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          576: {
+            items: 1.8,
+          },
+          900: {
+            items: 2.5,
+          },
+          1200: {
+            items: 3,
+          },
+          1300: {
+            items: 3.5,
+          },
+          1400: {
+            items: 4,
+          },
+          1600: {
+            items: 4.5,
+          },
+          1800: {
+            items: 5,
+          },
         },
-        576: {
-          items: 1.8,
-        },
-        900: {
-          items: 2.5,
-        },
-        1200: {
-          items: 3,
-        },
-        1300: {
-          items: 3.5,
-        },
-        1400: {
-          items: 4,
-        },
-        1600: {
-          items: 4.5,
-        },
-        1800: {
-          items: 5,
-        },
-      },
-    });
-  </script>
-  <script src="../js/main.js"></script>
+      });
+    </script>
+    <script src="../js/main.js"></script>
   </body>
 
 

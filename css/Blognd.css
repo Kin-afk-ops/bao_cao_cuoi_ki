@@ -1,0 +1,53 @@
+.back__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:mediumslateblue ;
+    color:bisque;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.4s ease;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.back__button:hover {
+    background-color:mediumvioletred;
+}
+
+.head__title{
+    text-align: center;
+}
+
+.para__content{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.line__head{
+    border-width: 2px;
+}
+
+.para__intent{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.para__content img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.para__content h2{
+    margin-bottom: 20px;
+}
+
+
+
+
+ 

@@ -1,6 +1,7 @@
 .blog__content {
     width: 1820px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .blog__item {
@@ -27,6 +28,3 @@
     margin-top: 10px;
 }
 
-.blog__item--content {
-
-}
