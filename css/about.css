@@ -1,5 +1,5 @@
 .container {
-<<<<<<< HEAD
+
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr auto;
@@ -54,6 +54,7 @@
       margin-left: auto;
       margin-right: auto;
       font-style: italic;
+      text-align: center;
     }
     
     .button button:hover {
@@ -65,7 +66,7 @@
            font-family: Georgia ;
 
     }
-=======
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
@@ -120,4 +121,4 @@
   font-size: 80px;
   font-family: Georgia;
 }
->>>>>>> 7a51ba317e4bc950551aed9c0435167ca45a0788
+
