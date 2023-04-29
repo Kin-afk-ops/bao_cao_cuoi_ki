@@ -1,5 +1,5 @@
 .blog__content {
-    width: 1820px;
+    width: 145%;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -8,15 +8,14 @@
     display: flex;
     background-color: white;
     border-radius: 12px;
- 
-    
     padding: 20px 30px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .blog__image {
     width: 300px;
     display: block; 
+    margin-right: 3%;
 }
 
 .blog__image img {
@@ -24,11 +23,22 @@
 }
 
 .blog__item .card-text {
-    width: 6    0%;
-    margin-top: 10px;
+    width: 90%;
 }
 
-.blog__item .card-body {
-    width: 200px;
-}
+/* RESPONSIVE  */
+@media (max-width: 1200px) {
+    .blog__item {
+        display: inline;
+        width: 100%;
+    }
 
+    .blog__content {
+        width: 97%;
+    }
+
+    .blog__image {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

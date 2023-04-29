@@ -172,7 +172,7 @@
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .trangchu__carousel {
@@ -183,6 +183,7 @@
 
   .carousel__number .carousel__number--content {
     display: flex;
+    align-items: flex-end;
   }
 
   .carousel__number .carousel__number--item {
@@ -261,9 +262,8 @@
     background-color: white;
     height: 160px;
     border-radius: 12px;
-  }
-  .carousel__history--item {  
-    background-color: #ffffff;  
+  } 
+  .carousel__history--item {   
     margin-right: 20px;
     border-radius: 12px;
     cursor: pointer;
@@ -273,7 +273,6 @@
 
   .carousel__history--item .history__thumbnail {
     border-radius: 12px 12px 0 0;
-    width: 2000px;
     height: 100px;
   }
 

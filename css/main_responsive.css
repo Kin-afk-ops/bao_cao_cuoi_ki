@@ -37,10 +37,16 @@
 
   .header__search .search__bar input {
     width: 100%;
+    padding-right: 120px;
+  }
+
+  .header--right .header__search {
+    justify-content: flex-end;
   }
 
   .header--right .header__search .avt {
     margin-left: 12px;
+    margin-right: 20px;
   }
 
   .trangchu__carousel {
@@ -144,5 +150,17 @@
   .carousel__history--item .history__thumbnail {
     width: 120px;
     border-radius: 12px 12px 0 0;
+  }
+  
+  .carousel__history--item .history__thumbnail {
+    height: 150px;
+  }
+
+  .carousel__history--content .item {
+    height: 220px;
+  }
+
+  .header__login--buton {
+    margin-right: 1rem;
   }
 }
