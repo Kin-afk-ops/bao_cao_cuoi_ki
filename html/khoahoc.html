@@ -101,7 +101,31 @@
       <!-- Header -->
       <div class="trangchu__header">
         <div class="header--left">
-          <p>Hãy bắt đầu một bài học mới, Alex!</p>
+
+          <!-- Modal -->
+          <div class="modal modal__background d-none">
+            <div class="modal__item text-center">
+              <i class="fa-regular fa-rectangle-xmark modal__close--icon"></i>
+              <i class=""></i>
+              <i
+                class="fa-solid fa-computer text-info"
+                style="font-size: 150px"
+              ></i>
+
+              <div class="modal__content">
+                <h2>Bạn định mua khoá học này?</h2>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary">Mua ngay</button>
+                  <button class="btn btn-secondary">Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------------------------------------------------ -->
+
+          <p>Hãy bắt đầu một bài học mới <span id="header__hello"></span></p>
           <p>Luyện mãi thành tài, miệt mài tất giỏi</p>
         </div>
 
@@ -188,7 +212,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./profile.html">Trang cá nhân</a></li>
                 <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                <li><a class="dropdown-item logout-btn" href="#">Đăng xuất</a></li>
               </ul>
             </div>
 
@@ -207,7 +231,9 @@
             Mức độ cơ bản
           </div>
           <div class="course__content owl-carousel">
-            <div class="course__item">
+
+
+            <div id="1" class="course__item">
               <img src="../image/nhap_mon.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -216,10 +242,14 @@
                 <p class="course__number">
                   28 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button  class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="2" class="course__item">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -228,10 +258,14 @@
                 <p class="course__number">
                   15 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="3" class="course__item">
               <img src="../image/c--.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -240,10 +274,14 @@
                 <p class="course__number">
                   30 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="4" class="course__item">
               <img src="../image/python.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -252,10 +290,14 @@
                 <p class="course__number">
                   25 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="5" class="course__item">
               <img src="../image/java.jpg" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -264,6 +306,10 @@
                 <p class="course__number">
                   40 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
@@ -279,11 +325,11 @@
 
         <!-- Mức độ nâng cao -->
         <div class="trangchu__course">
-          <div class="course__title" id="Course">
+          <div id="6" class="course__title" id="Course">
             Mức độ nâng cao
           </div>
           <div class="course__content owl-carousel">
-            <div class="course__item">
+            <div id="6" class="course__item">
               <img src="../image/java.jpg" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -292,10 +338,14 @@
                 <p class="course__number">
                   40 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="7" class="course__item">
               <img src="../image/MMT.jpg" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -304,10 +354,14 @@
                 <p class="course__number">
                   46 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="8" class="course__item">
               <img src="../image/python.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -316,10 +370,14 @@
                 <p class="course__number">
                   25 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="9" class="course__item">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -328,12 +386,16 @@
                 <p class="course__number">
                   15 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
 
 
-            <div class="course__item">
+            <div id="10" class="course__item">
               <img src="../image/c--.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -342,18 +404,12 @@
                 <p class="course__number">
                   30 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
         </div>
 
 
@@ -366,7 +422,7 @@
             Mức độ vận dụng
           </div>
           <div class="course__content owl-carousel">
-            <div class="course__item">
+            <div id="11" class="course__item">
               <img src="../image/thuat_toan.jpg" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -375,10 +431,14 @@
                 <p class="course__number">
                   40 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="12" class="course__item">
               <img src="../image/DSA.jpeg " class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -387,10 +447,14 @@
                 <p class="course__number">
                   25 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
-            <div class="course__item">
+            <div id="13" class="course__item">
               <img src="../image/OOP.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -399,12 +463,16 @@
                 <p class="course__number">
                   15 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
 
 
-            <div class="course__item">
+            <div id="14" class="course__item">
               <img src="../image/database.png" class="course__thumbnail" alt="">
               <div class="course__thumbnail--descrip">
                 <p class="course__text">
@@ -413,6 +481,10 @@
                 <p class="course__number">
                   30 bài giảng
                 </p>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary btn__buy">Mua khoá học</button>
+                </div>
               </div>
             </div>
 
@@ -518,6 +590,7 @@
 
 
     <script src="../js/main.js"></script>
+    <script src="../js/khoahoc.js"></script>
   </body>
 
 
