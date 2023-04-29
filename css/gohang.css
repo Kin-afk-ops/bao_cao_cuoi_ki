@@ -15,6 +15,7 @@
     display: flex;
     width: 95%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .giohang__thumbnail--descrip {
@@ -34,13 +35,19 @@
     margin: 0.875rem 0;
 }
 
+.giohang__button {
+    display: flex;
+    flex-direction: row;
+}
+
 .giohang__mua {
+    display: inline;
     height: 2.5rem;
-    margin-left: 35%;
     overflow: hidden;
 }
 
 .giohang__xoa {
+    display: inline;
     height: 2.5rem;
     margin-left: 1rem;
     margin-right: 20px;
