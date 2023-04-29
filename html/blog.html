@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<htmll lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="icon" href="../image/background.png" />
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="../Font/fontawesome-free-6.4.0-web/css/all.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Trang chủ CSS -->
+    <link rel="stylesheet" href="../css/trangchu.css" />
+
+    <!-- Responsive  -->
+    <link rel="stylesheet" href="../css/main_responsive.css">
+
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="../css/blog.css">
+  </head>
+
+  <body>
+    <section class="trangchu__content">
+
+      <div class="trangchu__content--left">
+        <div class="trangchu__brand">
+          <a href="trangchu.html" class="brand__logo">
+            <i class="fab fa-react"></i>
+            <p class="brand__name">Aorus</p>
+          </a>
+
+        </div>
+
+        <div class="trangchu__navbar">
+          <ul class="ps-0">
+            <li class="navbar__item">
+              <a href="./trangchu.html" class="navbar__item--content">
+                <i class="fa fa-home"></i>
+                Trang chủ
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="./khoahoc.html" class="navbar__item--content">
+                <i class="fa fa-book-open"></i>
+                Khóa học
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item active">
+              <a href="#" class="navbar__item--content">
+                <i class="fab fa-blogger"></i>
+                Blog
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+            <li class="navbar__item">
+              <a href="./about.html" class="navbar__item--content">
+                <i class="fa fa-users"></i>
+                About
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+
+            <li class="navbar__item">
+              <a href="video.html" class="navbar__item--content"> <!--Liên kết about-->
+                <i class="fa fa-users"></i>
+                Video
+              </a>
+              <div class="navbar__item--overflow">.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+      <div class="trangchu__content--right">
+
+
+
+
+        <!-- Header -->
+        <div class="trangchu__header">
+          <div class="header--left">
+            <p id="header__hello"></p>
+            <p>You're doing great this week. Keep it up!</p>
+          </div>
+
+          <!-- open mobile navbar -->
+          <label class="open__navbar--icon" for="open__navbar">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input class="d-none" type="checkbox" name="open__navbar" id="open__navbar">
+          <label for="open__navbar" class="overlay"></label>
+
+
+          <div class="mobile__navbar">
+            <div class="trangchu__brand">
+              <a href="./trangchu.html" class="brand__logo">
+                <i class="fab fa-react"></i>
+                <p class="brand__name mb-0">Aorus</p>
+              </a>
+
+            </div>
+
+            <div class="trangchu__navbar">
+              <ul class="ps-0">
+                <li class="navbar__item ">
+                  <a href="./trangchu.html" class="navbar__item--content">
+                    <i class="fa fa-home"></i>
+                    Trang chủ
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item">
+                  <a href="./khoahoc.html" class="navbar__item--content">
+                    <i class="fa fa-book-open"></i>
+                    Khóa học
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item active">
+                  <a href="./blog.html" class="navbar__item--content">
+                    <i class="fab fa-blogger"></i>
+                    Blog
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+                <li class="navbar__item">
+                  <a href="./about.html" class="navbar__item--content">
+                    <i class="fa fa-users"></i>
+                    About
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+
+                <li class="navbar__item">
+                  <a href="./video.html" class="navbar__item--content"> <!--Liên kết about-->
+                    <i class="fa fa-users"></i>
+                    Video
+                  </a>
+                  <div class="navbar__item--overflow">.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="header--right">
+            <div class="header__search">
+
+              <div class="search__bar">
+                <input type="text" placeholder="Tìm kím khóa học" />
+              </div>
+
+              <div class="dropdown">
+                <div class="btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../image/avatar.jpg" class="avt" alt="" />
+                </div>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./profile.html">Trang cá nhân</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                  <li>
+                    <a class="dropdown-item logout-btn" href="#">Đăng xuất</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="dangnhap.html" class="header__login--buton btn btn-primary ms-3 me-10">
+                Đăng nhập
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Blog 1 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-8 blog__image">
+              <img src="../image/blogpicture1.png" class="img-fluid" alt="..." />
+            </div>
+              
+            <div class="card-body">
+              <h5 class="card-title"><b>Xu thế chọn ngành hiện nay</b></h5>
+              <p class="card-text">
+                Nếu bạn đang phân vân trong việc chọn ngành, chuyển ngành thì
+                có thể tham khảo bài viết này để biết ngành gì đang hot hiện
+                nay và top các ngành nghề được dự đoán sẽ trở thành xu thế
+                nhé!...
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="../html/blog1.html" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>
+
+            
+
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture2.png" class="img-fluid" alt="..." />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Lương lập trình website cao hay thấp? Cơ hội nghề nghiệp ra sao?</b></h5>
+              <p class="card-text">
+                Trong những năm gần đây, nghề IT đã trở thành một nghề siêu hot với mức thu nhập được cho là “cực
+                khủng”. Vậy với ngách lập trình website thì sao? Lương lập trình website cao hay thấp?
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>
+
+            
+
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/Blogpicture3.png" class="img-fluid" alt="..." />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Góc chia sẻ: Nữ giới có nên lựa chọn theo nghề IT không? </b></h5>
+              <p class="card-text">
+                Mình đã từng được nghe cô tư vấn nói với một bạn nữ có ý định theo ngành IT rằng “là con gái, đừng nên
+                chọn IT vì sẽ rất vất vả”. Vậy thực tế, nữ giới có nên lựa chọn theo nghề IT không?
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>  
+
+          </div>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture4.png" class="img-fluid" alt="..." />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Khám phá IT là gì? Những vị trí đang phổ biến trong ngành IT</b></h5>
+              <p class="card-text">
+                Ai cũng biết IT là một ngành hot bởi nó có thể đem lại mức thu nhập rất “khủng”, tuy nhiên vẫn còn nhiều
+                người chưa rõ IT là gì và cụ thể trong ngành IT sẽ có những vị trí công việc nào? Hãy tìm hiểu.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>
+
+            
+
+          </div>
+        </div>
+
+        <!-- Blog 5 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture5.png" class="img-fluid" alt="..." />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Fullstack là gì? Cần kỹ năng gì để trở thành fullstack developer?</b></h5>
+              <p class="card-text">
+                Ai cũng biết IT là một ngành hot bởi nó có thể đem lại mức thu nhập rất “khủng”, tuy nhiên vẫn còn nhiều
+                người chưa rõ IT là gì và cụ thể trong ngành IT sẽ có những vị trí công việc nào? Hãy tìm hiểu.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 6 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture6.png" class="img-fluid" alt="..." />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"><b>Ngôn ngữ lập trình là gì? Các ngôn ngữ lập trình phổ biến nhất hiện nay </b>
+              </h5>
+              <p class="card-text">
+                “Ngôn ngữ lập trình là gì, tại sao phải sử dụng ngôn ngữ lập trình để giao tiếp với máy tính?” là câu
+                hỏi được nhiều người mới làm quen với IT thắc mắc nhất. Cùng theo dõi bài viết để hiểu rõ hơn nhé!
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>
+
+            
+
+          </div>
+        </div>
+
+        <!-- blog 7 -->
+        <div class="row g-0 blog__content">
+          <div class="col-md-8 blog__item">
+
+            <div class="col-md-2 blog__image">
+              <img src="../image/blogpicture7.png" class="img-fluid" alt="..." />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title"><b>So sánh JavaScript với những đối thủ khác như C, Java và Python</b>
+              </h5>
+              <p class="card-text">
+                Nếu bạn không nắm được JavaScript là gì thì khó mà tiến xa được trong lĩnh vực IT. JavaScript không đáng
+                sợ như mọi người đồn. Nhưng trước hết bạn cần nắm được
+                những điều cơ bản về JavaScript.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"></small>
+              </p>
+              <a href="" class="btn btn-primary mt-3">Xem thêm</a>
+            </div>        
+
+          </div>
+        </div>
+
+        
+
+
+      </div>
+
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="trangchu__footer">
+      <section class="footer__background">
+        <div class="footer__left">
+
+          <div class="footer__left--icon">
+            <p class="footer__title">Follow us</p>
+            <div class="footer__icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-github ms-2 me-2"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+
+          <div class="footer__left--detail">
+            <p class="footer__title">Thông tin</p>
+            <div class="footer__about--content">
+              <div class="footer__about--item">
+                <a href="#" class="mb-0">About1</a>
+              </div>
+              <div class="footer__about--item">
+                <a href="#" class="mb-0">About2</a>
+              </div>
+            </div>
+            <div class="footer__about--content">
+              <div class="footer__about--item">
+                <a href="#" class="mb-0">About3</a>
+              </div>
+              <div class="footer__about--item">
+                <a href="#" class="mb-0">About4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right--email">
+            <p class="footer__title">Follow us</p>
+            <p class="footer__email">Aorus@gmail.com</p>
+          </div>
+          <div class="footer__right--detail">
+            <p class="footer__title">Đăng ký</p>
+            <p>Để lại email của bạn để nhận được <br> thông báo sớm nhất về khóa học</p>
+            <input type="text" class="footer__input">
+            <button class="footer__button">Gửi</button>
+          </div>
+
+
+        </div>
+      </section>
+    </footer>
+
+
+
+    <!-- Thư viện hỗ trợ JQuery 3.6.4-->
+    <script src="../js/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JS 5.3.0  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL Carousel JS -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Khởi tạo sự kiện khi trang web đã sẵn sàng
+        $('.footer__button').click(function () {
+          // Lấy giá trị email từ input khi người dùng click vào button
+          var email = $('.footer__input').val();
+          // In giá trị email vào console
+          console.log("Email đăng ký: " + email);
+        });
+      });
+
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Khởi tạo sự kiện khi trang web đã sẵn sàng
+        $('.footer__button').click(function () {
+          // Lấy giá trị email từ input khi người dùng click vào button
+          var email = $('.footer__input').val();
+          // In giá trị email vào console
+          console.log("Email đăng ký: " + email);
+        });
+      });
+    </script>
+
+    <script src="../js/main.js"></script>
+  </body>
+
+
+
+  </html>

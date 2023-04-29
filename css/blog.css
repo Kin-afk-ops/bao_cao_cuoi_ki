@@ -1,0 +1,44 @@
+.blog__content {
+    width: 145%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.blog__item {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    justify-content: space-around;
+}
+
+.blog__image {
+    width: 300px;
+    display: block; 
+    margin-right: 3%;
+}
+
+.blog__image img {
+    border-radius: 12px;
+}
+
+.blog__item .card-text {
+    width: 90%;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 1200px) {
+    .blog__item {
+        display: inline;
+        width: 100%;
+    }
+
+    .blog__content {
+        width: 97%;
+    }
+
+    .blog__image {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
