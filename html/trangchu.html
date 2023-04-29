@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <link rel="icon" href="../image/background.png" />
+    <link rel="icon" href="../image/CODING.png" />
 
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="../css/owl.carousel.min.css" />
@@ -287,7 +287,7 @@
         <div class="trangchu__course">
           <div class="course__title" id="Course">Khóa học đang học</div>
           <div class="course__content owl-carousel">
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/nhap_mon.png" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Nhập môn IT</p>
@@ -295,7 +295,7 @@
               </div>
             </div>
 
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Lập trình C++ cơ bản</p>
@@ -303,7 +303,7 @@
               </div>
             </div>
 
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/java-scrip.jpg" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Lập trình JavaScrip cơ bản</p>
@@ -316,7 +316,7 @@
         <div class="trangchu__course">
           <div class="course__title" id="Course">Khóa học đã hoàn thành</div>
           <div class="course__content owl-carousel">
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/nhap_mon.png" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Nhập môn IT</p>
@@ -324,7 +324,7 @@
               </div>
             </div>
 
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Lập trình C++ cơ bản</p>
@@ -332,7 +332,7 @@
               </div>
             </div>
 
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Lập trình C++ cơ bản</p>
@@ -340,7 +340,7 @@
               </div>
             </div>
 
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Lập trình C++ cơ bản</p>
@@ -348,7 +348,7 @@
               </div>
             </div>
 
-            <div class="course__item">
+            <div class="course__item trangchu__video">
               <img src="../image/C++.jpg" class="course__thumbnail" alt="" />
               <div class="course__thumbnail--descrip">
                 <p class="course__text">Lập trình C++ cơ bản</p>
@@ -452,6 +452,21 @@
   });
 
 </script>
+
+<!-- MOVE to VIDEO -->
+<script>
+  // Lấy danh sách tất cả các thẻ div có class là "course__item"
+  const courseItems = document.querySelectorAll(".trangchu__video");
+  
+  // Lặp qua danh sách các thẻ div và thêm sự kiện click cho mỗi thẻ
+  courseItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Di chuyển đến trang mới
+      window.location.href = "video.html";
+    });
+  });
+</script>
+
 
 <script>
   $(".owl-carousel").owlCarousel({

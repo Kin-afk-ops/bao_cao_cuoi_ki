@@ -312,6 +312,7 @@
     width: 250px;
     height: 23 0px;
     overflow: hidden;
+    cursor: pointer;
   }
 
   .course__content .course__item .course__thumbnail {

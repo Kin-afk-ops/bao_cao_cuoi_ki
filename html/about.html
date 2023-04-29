@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="icon" href="../image/background.png" />
+    <link rel="icon" href="../image/CODING.png" />
 
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="../css/owl.carousel.min.css" />
@@ -26,6 +26,9 @@
 
     <!-- responsive -->
     <link rel="stylesheet" href="../css/main_responsive.css">
+
+    <!-- ABOUT CSS -->
+    <link rel="stylesheet" href="../css/about.css">
   </head>
 
   <body>
@@ -69,7 +72,7 @@
               </a>
               <div class="navbar__item--overflow">.</div>
             </li>
-            
+
             <li class="navbar__item active">
               <a href="about.html" class="navbar__item--content"> <!--Liên kết about-->
                 <i class="fa fa-users"></i>
@@ -97,81 +100,13 @@
           </div>
 
 
-          <!-- open mobile navbar -->
-          <label class="open__navbar--icon" for="open__navbar">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <input class="d-none" type="checkbox" name="open__navbar" id="open__navbar">
-          <label for="open__navbar" class="overlay"></label>
-
-
-          <div class="mobile__navbar">
-            <div class="trangchu__brand">
-              <a href="trangchu.html" class="brand__logo">
-                <img src="../image/CODING.png" width="150px" alt="">
-              </a>
-
-            </div>
-
-            <div class="trangchu__navbar">
-              <ul class="ps-0">
-                <li class="navbar__item">
-                  <a href="#" class="navbar__item--content">
-                    <i class="fa fa-home"></i>
-                    Trang chủ
-                  </a>
-                  <div class="navbar__item--overflow">.</div>
-                </li>
-                <li class="navbar__item">
-                  <a href="./khoahoc.html" class="navbar__item--content">
-                    <i class="fa fa-book-open"></i>
-                    Khóa học
-                  </a>
-                  <div class="navbar__item--overflow">.</div>
-                </li>
-
-                <li class="navbar__item">
-                  <a href="./giohang.html" class="navbar__item--content">
-                    <i class="fa fa-shopping-cart"></i>
-                    Giỏ hàng
-                  </a>
-                  <div class="navbar__item--overflow">.</div>
-                </li>
-
-                <li class="navbar__item">
-                  <a href="./blog.html" class="navbar__item--content">
-                    <i class="fab fa-blogger"></i>
-                    Blog
-                  </a>
-                  <div class="navbar__item--overflow">.</div>
-                </li>
-                
-                <li class="navbar__item active">
-                  <a href="./about.html" class="navbar__item--content">
-                    <i class="fa fa-users"></i>
-                    About
-                  </a>
-                  <div class="navbar__item--overflow">.</div>
-                </li>
-
-                <li class="navbar__item ">
-                  <a href="video.html" class="navbar__item--content"> <!--Liên kết about-->
-                    <i class="fa fa-play-circle"></i>
-                    Video
-                  </a>
-                  <div class="navbar__item--overflow">.</div>
-                </li>
-              </ul>
-            </div>
-          </div>
+         
 
           <div class="header--right">
             <div class="header__search">
               <div class="search__bar">
-                <input type="text" placeholder="What do you want to learn ?" />
-                <a href="">
-                  <i class="fa fa-search"></i>
-                </a>
+                <input type="text" placeholder="Tìm kiếm khóa học" />
+                
               </div>
 
               <div class="dropdown">
@@ -207,7 +142,7 @@
 
             </div>
           </div>
-          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -221,44 +156,41 @@
                 aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="../image/Khang.jpg" class="d-block w-100" alt="..." id="avatar">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="../image/Khang.jpg" class="d-block w-100 h-20" alt="..." id="avatar">
                 <div class="carousel-caption d-none d-md-block">
                   <h2>Trưởng nhóm</h2>
 
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="../image/Hung.jpg" class="d-block w-100" alt="..." id="avatar">
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/Hung.jpg" class="d-block w-100 h-20" alt="..." id="avatar">
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Phụ trách đồ họa</h3>
-
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="../image/Khoa.jpg" class="d-block w-100" alt="..." id="avatar">
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/Khoa.jpg" class="d-block w-100 h-20" alt="..." id="avatar">
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Phụ trách Blog</h3>
-
+                  <h3>Thư ký</h3>
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="../image/Linh.jpg" class="d-block w-100" alt="..." id="avatar">
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/Linh.jpg" class="d-block w-100 h-20" alt="..." id="avatar">
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Phụ trách kĩ thuật</h3>
+                  <h3>Phụ trách kỹ thuật</h3>
 
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="../image/Khoe.png" class="d-block w-100" alt="..." id="avatar">
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/Khoe.jpg" class="d-block w-100 h-20" alt="..." id="avatar">
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Phụ trách thuyết trình</h3>
 
                 </div>
               </div>
-
 
             </div>
 
@@ -341,23 +273,6 @@
 
   <script src="../js/trangchu.js"></script>
 
-  <script>
-    var owl = $('.owl-carousel');   <!--Dùng class = .owl-carousel -->
-    owl.owlCarousel({
-      items: 4,
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 1000,
-      autoplayHoverPause: true
-    });
-    $('.play').on('click', function () {
-      owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function () {
-      owl.trigger('stop.owl.autoplay')
-    })
-  </script>
   </script>
   <script src="../js/main.js"></script>
 
