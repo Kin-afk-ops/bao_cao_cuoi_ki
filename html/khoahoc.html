@@ -28,6 +28,9 @@
 
     <!-- Responsive  -->
     <link rel="stylesheet" href="../css/main_responsive.css">
+
+
+    <link rel="stylesheet" href="../css/login_register_responsive.css">
   </head>
 
   <body>
@@ -103,27 +106,28 @@
 
         <!-- Header -->
         <div class="trangchu__header">
-          <div class="header--left">
+          <!-- Modal -->
+          <div class="modal modal__background d-none">
+            <div class="modal__item text-center">
+              <i class="fa-regular fa-rectangle-xmark modal__close--icon"></i>
+              <i class=""></i>
+              <i class="fa-solid fa-computer text-info" style="font-size: 150px"></i>
 
-            <!-- Modal -->
-            <div class="modal modal__background d-none">
-              <div class="modal__item text-center">
-                <i class="fa-regular fa-rectangle-xmark modal__close--icon"></i>
-                <i class=""></i>
-                <i class="fa-solid fa-computer text-info" style="font-size: 150px"></i>
-
-                <div class="modal__content">
-                  <h2>Bạn định mua khoá học này?</h2>
-                  <p>Giá: 1.000.000 VND</p>
-                  <div>
-                    <button class="btn btn-primary">Mua ngay</button>
-                    <button class="btn btn-secondary">Thêm vào giỏ hàng</button>
-                  </div>
+              <div class="modal__content">
+                <h2>Bạn định mua khoá học này?</h2>
+                <p>Giá: 1.000.000 VND</p>
+                <div>
+                  <button class="btn btn-primary">Mua ngay</button>
+                  <button class="btn btn-secondary">Thêm vào giỏ hàng</button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- ------------------------------------------------------------------------------------------------ -->
+          <!-- ------------------------------------------------------------------------------------------------ -->
+
+          <div class="header--left">
+
 
             <p>Hãy bắt đầu một bài học mới <span id="header__hello"></span></p>
             <p>Luyện mãi thành tài, miệt mài tất giỏi</p>
