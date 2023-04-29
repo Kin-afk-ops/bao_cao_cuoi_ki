@@ -7,6 +7,10 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-color: #d9e9f3;
+  }
+
   .trangchu__content {
     display: flex;
     flex-direction: row;
@@ -340,9 +344,8 @@
   .footer__background {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
+    justify-content: space-around;
+    background-color: white;
   }
 
   .footer__left--icon .footer__icon {
@@ -354,7 +357,6 @@
   .footer__icon i {
     font-size: 1rem;
     border: 1px solid black;
-    margin-right: 10px;
     width: 1.8rem;
     height: 1.8rem;
     text-align: center;
