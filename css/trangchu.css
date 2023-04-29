@@ -315,6 +315,10 @@
     cursor: pointer;
   }
 
+  .course__content button {
+    margin-bottom: 15px;
+  }
+
   .course__content .course__item .course__thumbnail {
     width: 250px;
     height: 140px;
@@ -397,18 +401,29 @@
 
   .footer__about--content {
     display: flex;
+    flex-direction: column;
   }
 
   .footer__about--item a {
     display: block;
     text-decoration: none;
     color: black;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 0.9rem;
+    transition: all 0.3s;
+    font-weight: 600;
+  }
+
+  .footer__about--item a:hover {
+    color: #f67fd6;
   }
 
   .footer__about--content .footer__about--item {
     margin-right: 7rem;
+  }
+
+  .footer__left--detail {
+    padding-bottom: 20px;
   }
 
   .footer__right--detail .footer__input {

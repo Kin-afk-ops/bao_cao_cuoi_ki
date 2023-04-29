@@ -67,4 +67,18 @@ $(document).ready(function () {
     checkAccount = -1;
     window.location.reload();
   });
+
+  // Xu li hien thi dang nhap trang chu
+  var trangchuChuadangnhap = $(".trangchu__chuadangnhap");
+  var trangchuDadangnhap = $(".trangchu__dadangnhap");
+  var giohangChuadangnhap = $(".giohang__chuadangnhap");
+  var giohangDadangnhap = $(".giohang__dadangnhap");
+
+  if (checkAccount !== -1) {
+    trangchuChuadangnhap.addClass("d-none");
+    giohangChuadangnhap.addClass("d-none");
+
+    trangchuDadangnhap.removeClass("d-none");
+    giohangDadangnhap.removeClass("d-none");
+  }
 });

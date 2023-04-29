@@ -26,7 +26,7 @@ html {
 
 .modal__background {
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   width: 100%;
