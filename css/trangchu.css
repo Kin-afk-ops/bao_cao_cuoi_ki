@@ -43,7 +43,7 @@
     font-size: 40px;
     color: white;
     margin-right: 10px;
-    text-align: center  ;
+    text-align: center;
   }
 
   .trangchu__brand a {
@@ -59,6 +59,7 @@
     list-style-type: none;
     color: black;
     position: relative;
+    cursor: pointer;
   }
 
   .trangchu__navbar .navbar__item .navbar__item--content {
@@ -73,7 +74,8 @@
   }
 
   .trangchu__navbar .navbar__item .navbar__item--content i {
-    margin-right: 5px;
+    margin-right: 20px;
+    width: 5px;
   }
 
   .trangchu__navbar .navbar__item .navbar__item--overflow {
@@ -266,8 +268,9 @@
     background-color: white;
     height: 160px;
     border-radius: 12px;
-  } 
-  .carousel__history--item {   
+  }
+
+  .carousel__history--item {
     margin-right: 20px;
     border-radius: 12px;
     cursor: pointer;
@@ -307,7 +310,7 @@
     border-radius: 12px;
     background-color: white;
     width: 250px;
-    height: 23  0px;
+    height: 23 0px;
     overflow: hidden;
   }
 

@@ -47,7 +47,9 @@
     margin-bottom: 20px;
 }
 
-
+.footer__blog {
+    margin-left: 0 !important;
+}
 
 
  
