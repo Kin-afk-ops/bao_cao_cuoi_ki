@@ -1,0 +1,83 @@
+.giohang__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.giohang__content .giohang__item .giohang__thumbnail {
+    display: block;
+    width: 180px;
+    height: 100px;
+}
+
+.giohang__item {
+    background-color: white;
+    display: flex;
+    width: 95%;
+    align-items: center;
+}
+
+.giohang__thumbnail--descrip {
+    margin-left: 2%;
+    font-size: 0.875rem;
+    width: 250px;
+}
+
+.giohang__thumbnail--descrip .giohang__text {
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.giohang__hr {
+    width: 95%;
+    margin: 0.875rem 0;
+}
+
+.giohang__mua {
+    height: 2.5rem;
+    margin-left: 35%;
+    overflow: hidden;
+}
+
+.giohang__xoa {
+    height: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+    .giohang__mua {
+        margin-left: 5rem;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .giohang__item {
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .giohang__mua,
+    .giohang__xoa {
+        margin-bottom: 10px;
+        margin: 0;
+    }
+    
+    .giohang__content .giohang__item .giohang__thumbnail {
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    .giohang__thumbnail--descrip {
+        margin: 0;
+    }
+
+    .giohang__item button {
+        margin-bottom: 10px;
+    }
+}
