@@ -7,7 +7,7 @@
         "button";
       align-items: center;
       justify-items: center;
-      height: 100vh;
+      /* height: 100vh; */
     }
     
     .carousel {
@@ -19,7 +19,7 @@
     
     .carousel-item active img {
       display: block;
-      height: 200px;
+      height: 250px;
       margin: auto;
 
     }
@@ -33,7 +33,7 @@
     }
     #avatar{
       
-      height: 720px;
+      height: 500px;
       width: 820x;
       object-fit: contain;
       
@@ -47,6 +47,12 @@
       font-size: 18px;
       cursor: pointer;
       vertical-align: text-top;
+    }
+    #h1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: italic;
     }
     
     .button button:hover {

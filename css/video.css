@@ -17,26 +17,35 @@ body {
     
     /* Thêm các tùy chỉnh CSS khác tại đây */
 iframe{
-      height: 500px;
       width: 800px;
-      
+      height: 450px;
 }
-.col-md-9{
-      text-align: left;
-      object-fit: cover;
-      margin-left: 0px;
-      height: px;
+
+.video__content {
+      display: flex;
 }
-.col-md-3{
-      text-align: right;
-      white-space: nowrap;
-      
-      .card{   
-            max-width: 400px;
-            max-height:500px;
-      }
-      
+
+.video__card--body{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      border-radius: 0;
+      width: 17rem;
+      height: auto;    
+      padding: 10px;
 }
-#test{
-    
+
+.video__content--right {
+      margin-left: 20px;
+}
+
+.video__content--right p {
+      margin-bottom: 0;
+}
+
+.collapse {
+}
+
+.video__title {
+      width: 17rem;
+      border-radius: 5px 5px 0px 0px;
 }

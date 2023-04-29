@@ -23,7 +23,7 @@
 
     <!-- Trang chủ CSS -->
     <link rel="stylesheet" href="../css/trangchu.css" />
-    <link rel="stylesheet" href="../css/video.css"/>
+    <link rel="stylesheet" href="../css/video.css" />
   </head>
 
   <body>
@@ -120,61 +120,70 @@
               <a href="dangnhap.html" class="header__login--buton btn btn-primary mx-2">
                 Đăng nhập
               </a>
-              <a href="dangky.html" class="header__login--buton btn btn-primary mx-2">
+              <!-- <a href="dangky.html" class="header__login--buton btn btn-primary mx-2">
                 Đăng ký
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
-       
-   
+
+
         <!--Nội dung chính-->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <figure>
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/gX54HnLpiog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </figure>
-            </div>
-            <div class="col-md-3">
-              <!--Phần cột trái-->
-             
-              <div class="card " style="width: 300px; height: 200px; overflow-y: scroll;">
-              
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <a href="#">Lập trình hướng đối tượng #1: OOP là cái gì?</a>  </li>
-                  
-                  <li class="list-group-item"><a href="">Giới thiệu về quy tắc SOLID: Kĩ năng cần có của một dev trình cao</a></li>
-                  <li class="list-group-item"><a href="">Phân tích quy tắc S trong Solid: Single responsibility principle</a></li>
-                  <li class="list-group-item"><a href="">Phân tích quy tắc O trong Solid: Open/Closed principle</a></li>
-                  
-                  <div id="test">
-
-
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-
-                  </div>
-                  
-                </ul>
-              </div>
-              
-                
-              
-          
-             <!--Kết thúc phần cột trái-->
-            </div>
+        <div class="video__content">
+          <div class="video__content--left">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TuFp9XYcDV0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </div>
+          <!-- VIDEO LIST -->
+          <div class="video__content--right">
+            <!-- ITEMS -->
+            <div class="video__items">
+              <p>
+                <a class="btn btn-primary video__title" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Link with href
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body video__card--body">
+                  hihihihihihihihihihihi
+                </div>
+                <div class="card card-body video__card--body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+                <div class="card card-body video__card--body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <!-- -------- -->
+            <!-- ITEMS -->
+            <div class="video__items">
+              <p>
+                <a class="btn btn-primary video__title" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Lập trình hướng đối tượng
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body video__card--body">
+                  hihihihihihihihihihihi
+                </div>
+                <div class="card card-body video__card--body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+                <div class="card card-body video__card--body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <!-- -------- -->
+
+          </div>
+
+
         </div>
-        
+
         <!--Kết thúc phần nội dung-->
     </section>
 
@@ -255,8 +264,8 @@
     </footer>
 
 
-<!-- Bootstrap JS -->
-<script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
   </body>
 
